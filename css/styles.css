@@ -76,16 +76,10 @@
   height: 15%; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff1089; }
+  background: #6ed7d6; }
 
 ::-webkit-scrollbar-track {
   display: none; }
-
-#root {
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  max-width: 93.75rem; }
 
 .img-logo {
   height: 4rem; }
@@ -94,7 +88,16 @@
       height: 3.5rem; } }
 
 body {
-  background: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.88)), url("https://image.freepik.com/vector-gratis/diseno-patron-medico_1061-360.jpg"); }
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.74;
+  text-decoration: none;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
 
 main {
   background-color: #ffff;
@@ -210,24 +213,25 @@ body {
   transition-duration: 0.3s; }
 
 a:hover {
-  color: #ff1089; }
+  color: #6ed7d6; }
 
 .nav-personalized {
   z-index: 999;
   max-width: 93.75rem;
   position: fixed;
   top: 0;
-  color: #e7e6e6;
-  width: 100%;
+  min-width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #363839;
+  flex-wrap: wrap;
+  color: #969fa8;
+  background-color: #ffffff;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.09), 3px 3px 3px rgba(0, 0, 0, 0.09);
-  padding: 0.9375rem 6.25rem;
+  padding: 1.5rem;
   transition: 0.5s; }
   .nav-personalized .logo {
-    display: flex; }
+    display: flex;
+    align-items: center;
+    width: 20%; }
     .nav-personalized .logo img {
       width: 15.5rem; }
   .nav-personalized.sticky .navegation {
@@ -235,13 +239,18 @@ a:hover {
   .nav-personalized .navegation {
     position: relative;
     line-height: 5rem;
-    width: 100%;
     transition: 0.6s;
-    transition-property: line-height; }
+    transition-property: line-height;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+    width: 80%; }
     .nav-personalized .navegation .menu {
       position: relative;
       display: flex;
-      justify-content: space-around;
+      width: 60%;
+      gap: 10rem;
       transition: 0.5s;
       transition-property: right, visibility; }
       .nav-personalized .navegation .menu.active {
@@ -257,7 +266,7 @@ a:hover {
           .nav-personalized .navegation .menu .logo-mobile {
             display: flex; } }
       .nav-personalized .navegation .menu .menu-item a:hover {
-        color: #ff1089;
+        color: #6ed7d6;
         transition: 0.3s; }
       .nav-personalized .navegation .menu .menu-item .sub-btn-a {
         padding-left: 1.5rem;
@@ -265,7 +274,7 @@ a:hover {
         transition: transform 0.5s ease; }
         .nav-personalized .navegation .menu .menu-item .sub-btn-a:hover + i {
           transform: rotate(180deg);
-          color: #ff1089; }
+          color: #6ed7d6; }
           @media (max-width: 1000px) {
             .nav-personalized .navegation .menu .menu-item .sub-btn-a:hover + i {
               transform: rotate(0); } }
@@ -274,7 +283,7 @@ a:hover {
         transition: transform 0.5s ease; }
         .nav-personalized .navegation .menu .menu-item .sub-btn:hover {
           transform: rotate(180deg);
-          color: #ff1089; }
+          color: #6ed7d6; }
           @media (max-width: 1000px) {
             .nav-personalized .navegation .menu .menu-item .sub-btn:hover {
               transform: rotate(0); } }
@@ -334,6 +343,9 @@ a:hover {
         .nav-personalized .navegation .menu .close-btn:hover {
           color: #00b2f3;
           transition: 0.3s; }
+    .nav-personalized .navegation .schedule {
+      width: 10%;
+      display: flex; }
   .nav-personalized .menu-btn {
     cursor: pointer;
     display: none; }
@@ -503,7 +515,7 @@ a:hover {
         .footer__icons i {
           font-size: 1em; } }
       .footer__icons i:hover {
-        color: #ff1089; }
+        color: #6ed7d6; }
   .footer__copy {
     color: #e7e6e6;
     background-color: #282a2b;
@@ -532,7 +544,7 @@ a:hover {
     position: absolute;
     bottom: 0.625rem;
     left: 50%;
-    color: #ff1089;
+    color: #6ed7d6;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
@@ -569,7 +581,7 @@ a:hover {
       margin-right: 0.625rem;
       cursor: pointer; }
       .carousel .carousel-navigation .carousel-dot.active {
-        background-color: #ff1089;
+        background-color: #6ed7d6;
         -moz-transform: scale(1.8);
         -webkit-transform: scale(1.8);
         -o-transform: scale(1.8);
@@ -609,7 +621,7 @@ a:hover {
     .container-get_to_know_us ul li {
       width: 100%; }
       .container-get_to_know_us ul li i {
-        color: #ff1089; }
+        color: #6ed7d6; }
   .container-get_to_know_us__map {
     display: flex;
     flex-direction: row;
@@ -630,11 +642,11 @@ a:hover {
     height: 0.0625rem;
     border: 0;
     color: #666;
-    background-color: #ff1089; }
+    background-color: #6ed7d6; }
   .contact a {
     color: #00b2f3; }
   .contact i {
-    color: #ff1089; }
+    color: #6ed7d6; }
 
 .contact-form {
   background-color: #f4f7f7;
@@ -661,7 +673,7 @@ a:hover {
 .field textarea:focus,
 input:focus,
 input[type]:focus {
-  border-color: #ff1089;
+  border-color: #6ed7d6;
   box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 5px #ff1089;
   outline: 0 none; }
 
@@ -730,7 +742,7 @@ input[type]:focus {
           gap: 1rem;
           justify-content: center; } }
       .financing .ul ul i {
-        color: #ff1089; }
+        color: #6ed7d6; }
     @media (max-width: 830px) {
       .financing .ul {
         max-width: 100%; } }
@@ -748,7 +760,7 @@ input[type]:focus {
     height: 0.0625rem;
     border: 0;
     color: #666;
-    background-color: #ff1089; }
+    background-color: #6ed7d6; }
     @media (max-width: 830px) {
       .financing-hr hr {
         margin: 0;
@@ -757,7 +769,7 @@ input[type]:focus {
         height: 0.0625rem;
         border: 0;
         color: #666;
-        background-color: #ff1089; } }
+        background-color: #6ed7d6; } }
 
 .container-financing {
   display: flex;
@@ -791,7 +803,7 @@ input[type]:focus {
             align-items: start;
             gap: 0.5rem; } }
         .container-financing__patients__ul ul i {
-          color: #ff1089; }
+          color: #6ed7d6; }
     @media (max-width: 830px) {
       .container-financing__patients {
         width: 100%; } }
