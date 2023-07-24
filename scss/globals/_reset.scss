@@ -17,12 +17,6 @@
 ::-webkit-scrollbar-track {
   display: none;
 }
-#root {
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  max-width: 93.75rem;
-}
 
 .img-logo {
   height: 4rem;
@@ -32,8 +26,16 @@
 }
 
 body {
-  background: linear-gradient(rgba(255, 255, 255, 0.91), rgba(255, 255, 255, 0.88)),
-    url("https://image.freepik.com/vector-gratis/diseno-patron-medico_1061-360.jpg");
+  font-size: 1em;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.74;
+  text-decoration: none;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 main {
   background-color: #ffff;
