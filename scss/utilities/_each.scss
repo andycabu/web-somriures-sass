@@ -1,0 +1,7 @@
+@each $class, $styles in $class-styles {
+  .#{$class} {
+    @each $propiedad, $valor in $styles {
+      #{$propiedad}: $valor;
+    }
+  }
+}

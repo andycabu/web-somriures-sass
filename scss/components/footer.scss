@@ -1,0 +1,50 @@
+.footer {
+  @include display-flex(row, center, 0.5rem) {
+    color: $text-footer;
+    background-color: $background-primary;
+
+    &__details {
+      padding-right: 0;
+      @include display-flex;
+      &__img {
+        width: 15rem;
+        @include display-flex;
+        padding-right: 0.5rem;
+        @include breakpoint(sm) {
+          width: 10rem;
+        }
+      }
+      &__ul {
+        padding-top: 0.5rem;
+        @include display-flex(column);
+      }
+
+      @include breakpoint(sm) {
+        padding-right: 3rem;
+        @include display-flex(column);
+      }
+    }
+    &__icons {
+      @include display-flex(column);
+      & i {
+        font-size: 1.2em;
+        color: $text-footer;
+        padding: 0.25rem 0.25rem 0.25rem 1rem;
+        @include breakpoint(sm) {
+          font-size: 1em;
+        }
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+  &__copy {
+    color: $text-footer;
+    background-color: $background-secondary;
+    padding-top: 0.25rem;
+    & p {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.container-text {
+  @include display-flex(column);
+
+  p {
+    max-width: 80%;
+    @include breakpoint(sm) {
+      max-width: 100%;
+    }
+  }
+}
+.container-img {
+  @include breakpoint(lg) {
+    margin-top: 2rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 6rem;
+  }
+}

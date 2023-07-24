@@ -1,0 +1,40 @@
+.sub-menu {
+  position: absolute;
+  background: $background-primary;
+  top: 4rem;
+  padding: 0;
+  height: 36rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: $shades;
+  text-align: center;
+  transform: translateY(1.25rem);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  .sub-item {
+    box-shadow: inset 0 -1.875rem 0.3125rem -1.875rem rgb(255, 255, 255);
+    height: 3rem;
+    width: inherit;
+    a {
+      @include display-flex;
+      width: 100%;
+      height: 100%;
+      &:hover {
+        background: $color-secondary;
+        transition: 0.3s;
+        color: $text-footer !important;
+      }
+    }
+  }
+  @include breakpoint(lg) {
+    position: relative;
+    left: -0.625rem;
+    top: 0;
+    transform: translateX(0.625rem);
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border-radius: 0.3125rem;
+  }
+}

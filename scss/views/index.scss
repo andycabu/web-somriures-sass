@@ -1,0 +1,26 @@
+.container-get_to_know_us {
+  padding-top: 2rem;
+  @include display-flex();
+  @include breakpoint(sm) {
+    @include display-flex(column);
+    gap: 1rem;
+  }
+  & p {
+    margin-bottom: 1rem;
+  }
+  & ul {
+    @include display-flex(column);
+    row-gap: 1rem;
+    & li {
+      width: 100%;
+      & i {
+        color: $color-primary;
+      }
+    }
+  }
+  &__map {
+    @include display-flex;
+    width: 100%;
+    @include shades(0.625rem, 3);
+  }
+}

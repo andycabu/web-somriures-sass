@@ -1,0 +1,21 @@
+.financing {
+  @include display-flex(column);
+  .ul {
+    max-width: 60%;
+    ul {
+      @include grid-template-columns(2, 1rem) {
+        @include breakpoint(sm) {
+          @include grid-template-columns(1, 1rem);
+        }
+      }
+      padding: 1rem;
+
+      i {
+        color: $color-primary;
+      }
+    }
+    @include breakpoint(sm) {
+      max-width: 100%;
+    }
+  }
+}

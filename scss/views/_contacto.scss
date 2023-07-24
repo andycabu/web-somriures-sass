@@ -1,0 +1,99 @@
+/* ESTILOS PAGINA CONTACTO */
+
+.contact {
+  margin-top: 4rem;
+  hr {
+    @include line(null);
+  }
+  a {
+    color: $color-secondary;
+  }
+  i {
+    color: $color-primary;
+  }
+}
+.contact-form {
+  background-color: #f4f7f7;
+  padding: 1rem;
+  box-shadow: $shades;
+  border-radius: 1.5rem;
+}
+
+.field input {
+  font-weight: 500;
+  background-color: #fff;
+  padding: 0.5rem 2.1rem;
+  border: 1px solid #ffff;
+  height: 4rem;
+  margin-bottom: 3rem;
+}
+
+.field textarea {
+  font-weight: 500;
+  background-color: #fff;
+  padding: 0.5rem 2.1rem;
+  border: 1px solid #ffff;
+  height: 7rem;
+  resize: none;
+}
+
+.field textarea:focus,
+input:focus,
+input[type]:focus {
+  border-color: $color-primary;
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 5px #ff1089;
+  outline: 0 none;
+}
+
+.send {
+  text-align: -webkit-center;
+  button {
+    opacity: 100;
+    border: 0 solid #9d9d9d;
+    width: 8rem;
+    margin-top: 2rem;
+    height: 3.2rem;
+    background-color: #ff1089;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    transition: 0.3s;
+    &:hover {
+      background-color: darken(#ff1089, 30);
+    }
+  }
+}
+.button-disabled {
+  opacity: 0.3 !important;
+  cursor: not-allowed !important;
+}
+.success-msg {
+  display: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #84fb004f;
+}
+.success-msg p {
+  color: #007100c4;
+}
+
+@include breakpoint(sm) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 7rem;
+  }
+
+  .wc {
+    width: 100% !important;
+  }
+  .fp {
+    padding: 0;
+  }
+  .contact-form {
+    margin-top: 2rem;
+  }
+}
