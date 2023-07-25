@@ -27,7 +27,6 @@
 
 body {
   font-size: 1em;
-  font-weight: 500;
   font-style: normal;
   line-height: 1.74;
   text-decoration: none;
@@ -41,15 +40,9 @@ main {
   background-color: #ffff;
   min-height: 100vh;
 }
-section {
-  padding: 2rem;
-  @include breakpoint(sm) {
-    padding: 1rem;
-  }
-}
 
 h1 {
-  font-weight: 800;
+  font-weight: 300;
   font-size: calc(1.6rem + 0.7vw);
   text-align: center;
   text-transform: uppercase;
@@ -59,8 +52,8 @@ h1 {
   margin: 3rem 0 2rem 0;
 }
 h2 {
-  font-weight: 700;
-  font-size: calc(1rem + 0.7vw);
+  font-weight: 300;
+  font-size: calc(2rem + 0.7vw);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4375rem;
@@ -70,7 +63,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: calc(1rem + 0.5vw);
   text-align: center;
   text-transform: uppercase;

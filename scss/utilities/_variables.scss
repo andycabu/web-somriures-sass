@@ -2,7 +2,7 @@
 
 $font-small: 13px;
 $font-medium: 1em;
-$color-primary: #6ed7d6;
+$color-primary: #00b2f3;
 $color-secondary: #00b2f3;
 $background-primary: #363839;
 $background-secondary: #282a2b;
@@ -15,51 +15,51 @@ $grid-breakpoints: (
   xs: 320px,
   sm: 830px,
   md: 768px,
-  lg: 1000px
+  lg: 1154px,
 );
 
 // class
 $class-styles: (
   p-0: (
-    padding: 0
+    padding: 0,
   ),
   m-0: (
-    margin: 0
+    margin: 0,
   ),
   w-100: (
-    width: 100%
+    width: 100%,
   ),
   h-100: (
-    height: 100%
+    height: 100%,
   ),
   d-flex: (
-    display: flex
+    display: flex,
   ),
   flex-column: (
-    flex-direction: column
+    flex-direction: column,
   ),
   flex-row: (
-    flex-direction: row
+    flex-direction: row,
   ),
   ai-center: (
-    align-items: center
+    align-items: center,
   ),
   font-weight-600: (
-    font-weight: 600
+    font-weight: 600,
   ),
   position-relative: (
-    position: relative
+    position: relative,
   ),
   align-self-center: (
-    align-self: center
+    align-self: center,
   ),
   text-center: (
-    text-align: center
+    text-align: center,
   ),
   justify-content-center: (
-    justify-content: center
+    justify-content: center,
   ),
   justify-content-around: (
-    justify-content: space-around
-  )
+    justify-content: space-around,
+  ),
 );

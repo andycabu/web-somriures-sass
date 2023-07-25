@@ -13,26 +13,37 @@
   }
 }
 .contact-form {
-  background-color: #f4f7f7;
-  padding: 1rem;
-  box-shadow: $shades;
-  border-radius: 1.5rem;
+  background-color: #ffffff;
+  padding: 3rem;
+
+  &__title {
+    height: 10rem;
+    background-color: $color-primary;
+    p {
+      font-size: 2em;
+      color: #ffffff;
+      margin: 0;
+      text-align: start;
+      height: 100%;
+      padding: 3rem 3rem 2rem 2rem;
+    }
+  }
 }
 
 .field input {
   font-weight: 500;
-  background-color: #fff;
+  background-color: #f4f7f7;
   padding: 0.5rem 2.1rem;
-  border: 1px solid #ffff;
+  border: 1px solid #f4f7f7;
   height: 4rem;
   margin-bottom: 3rem;
 }
 
 .field textarea {
   font-weight: 500;
-  background-color: #fff;
+  background-color: #f4f7f7;
   padding: 0.5rem 2.1rem;
-  border: 1px solid #ffff;
+  border: 1px solid #f4f7f7;
   height: 7rem;
   resize: none;
 }
@@ -92,8 +103,5 @@ input[type]:focus {
   }
   .fp {
     padding: 0;
-  }
-  .contact-form {
-    margin-top: 2rem;
   }
 }

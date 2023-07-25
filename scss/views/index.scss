@@ -1,26 +1,211 @@
-.container-get_to_know_us {
-  padding-top: 2rem;
-  @include display-flex();
-  @include breakpoint(sm) {
-    @include display-flex(column);
-    gap: 1rem;
+.container-img {
+  max-height: 100vh;
+  img {
+    max-height: 100vh;
   }
-  & p {
-    margin-bottom: 1rem;
-  }
-  & ul {
-    @include display-flex(column);
-    row-gap: 1rem;
-    & li {
-      width: 100%;
-      & i {
-        color: $color-primary;
-      }
+}
+.container-index-h2 {
+  background-color: #f4f7f7;
+  .index-h2 {
+    margin-top: 20rem;
+    @include breakpoint(lg) {
+      background-color: #ffffff;
+      margin-top: 8rem;
     }
   }
-  &__map {
-    @include display-flex;
-    width: 100%;
-    @include shades(0.625rem, 3);
+}
+.container-index {
+  display: flex;
+  position: relative;
+  padding: 0 8rem;
+
+  &__text {
+    padding: 2rem 3rem;
+    width: 50%;
+    h3 {
+      margin: 2rem 0;
+    }
+    @include breakpoint(lg) {
+      padding: 2rem 0rem;
+    }
+    @include breakpoint(sm) {
+      width: 100%;
+    }
+  }
+  .container-contact {
+    width: 45%;
+    position: absolute;
+    top: -6.5625rem;
+    padding-right: 7rem;
+    right: 0;
+    @include breakpoint(lg) {
+      padding-right: 2rem;
+    }
+    @include breakpoint(sm) {
+      margin-top: 6rem;
+      padding: 0;
+      position: unset;
+      width: 100%;
+    }
+  }
+  @include breakpoint(lg) {
+    padding: 0 1.5rem;
+  }
+  @include breakpoint(sm) {
+    flex-direction: column;
+  }
+}
+.container-treatments {
+  background-color: #ffff;
+  height: 25rem;
+  padding: 0 16rem;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem 2rem;
+    justify-content: center;
+
+    &__card {
+      position: relative;
+      background-color: #ffffff;
+      box-shadow: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
+
+      height: 15rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__img {
+        top: -1.5rem;
+        position: absolute;
+        a {
+          background-color: $color-primary;
+          border: 0.0625rem solid white;
+          border-radius: 13.1875rem;
+          img {
+            padding: 1.5rem;
+            height: 7.875rem;
+          }
+        }
+      }
+      &__treatments {
+        font-size: 1.125rem;
+        margin-top: 5rem;
+      }
+      &__info {
+        font-size: 0.9375rem;
+        margin-top: 2rem;
+        color: #969fa8;
+      }
+    }
+    @include breakpoint(lg) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 2rem 1rem;
+    }
+  }
+  &__a {
+    margin-top: 4rem;
+    text-align: center;
+    color: $color-primary;
+  }
+  @include breakpoint(lg) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(sm) {
+    padding: 0 1rem;
+  }
+}
+
+.philosophy {
+  background-color: #f4f7f7;
+  padding-top: 10rem;
+}
+.container-philosophy {
+  display: flex;
+  margin-top: 10rem;
+  &__1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16rem;
+    color: #969fa8;
+
+    ul {
+      font-size: 1.3125em;
+      padding: 3rem;
+      li {
+        display: list-item;
+        list-style-type: disc;
+      }
+    }
+    img {
+      padding-right: 6rem;
+      @include breakpoint(sm) {
+        padding-right: 0;
+      }
+    }
+    @include breakpoint(lg) {
+      padding-left: 2rem;
+    }
+    @include breakpoint(sm) {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+  &__2 {
+    color: #ffffff;
+    width: 50%;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 70%;
+      padding: 13rem 0 10rem 0;
+      h3 {
+        color: #ffffff;
+      }
+      ul {
+        padding-left: 2rem;
+        margin-top: 1rem;
+        width: 100%;
+
+        li {
+          position: relative;
+          text-align: left;
+          font-size: 1.1em;
+          font-weight: 400;
+          padding: 0.92rem 0 0.95rem 3rem;
+          &:nth-child(2n + 1) {
+            background-color: #0194c9;
+          }
+          i {
+            padding-top: 0.3rem;
+            font-size: 1.3em;
+            position: absolute;
+            left: 1rem;
+          }
+        }
+      }
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+  @include breakpoint(lg) {
+    margin-top: 30rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 75rem;
+    flex-direction: column;
   }
 }
