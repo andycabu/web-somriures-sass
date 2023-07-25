@@ -89,7 +89,6 @@
 
 body {
   font-size: 1em;
-  font-weight: 500;
   font-style: normal;
   line-height: 1.74;
   text-decoration: none;
@@ -104,7 +103,7 @@ main {
   min-height: 100vh; }
 
 h1 {
-  font-weight: 800;
+  font-weight: 300;
   font-size: calc(1.6rem + 0.7vw);
   text-align: center;
   text-transform: uppercase;
@@ -124,7 +123,7 @@ h2 {
   margin: 3rem 0 2rem 0; }
 
 h3 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: calc(1rem + 0.5vw);
   text-align: center;
   text-transform: uppercase;
@@ -314,7 +313,7 @@ a:hover {
           position: fixed;
           display: block;
           visibility: hidden;
-          background: #363839;
+          background: #ffffff;
           overflow-y: auto;
           height: 100vh;
           justify-content: space-around;
@@ -691,6 +690,10 @@ a:hover {
       .container-treatments__cards {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 2rem 1rem; } }
+  .container-treatments__a {
+    margin-top: 4rem;
+    text-align: center;
+    color: #00b2f3; }
   @media (max-width: 1154px) {
     .container-treatments {
       padding: 0 2rem; } }
@@ -707,15 +710,72 @@ a:hover {
   margin-top: 10rem; }
   .container-philosophy__1 {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 16rem; }
-    .container-philosophy__1 p {
-      color: #969fa8; }
+    padding-left: 16rem;
+    color: #969fa8; }
+    .container-philosophy__1 ul {
+      font-size: 1.3125em;
+      padding: 3rem; }
+      .container-philosophy__1 ul li {
+        display: list-item;
+        list-style-type: disc; }
+    .container-philosophy__1 img {
+      padding-right: 6rem; }
+      @media (max-width: 830px) {
+        .container-philosophy__1 img {
+          padding-right: 0; } }
+    @media (max-width: 1154px) {
+      .container-philosophy__1 {
+        padding-left: 2rem; } }
+    @media (max-width: 830px) {
+      .container-philosophy__1 {
+        width: 100%;
+        padding: 0 1rem; } }
   .container-philosophy__2 {
+    color: #ffffff;
     width: 50%;
-    background-color: #00b2f3; }
+    background-color: #00b2f3;
+    display: flex;
+    flex-direction: column;
+    align-items: start; }
+    .container-philosophy__2__text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 70%;
+      padding: 13rem 0 10rem 0; }
+      .container-philosophy__2__text h3 {
+        color: #ffffff; }
+      .container-philosophy__2__text ul {
+        padding-left: 2rem;
+        margin-top: 1rem;
+        width: 100%; }
+        .container-philosophy__2__text ul li {
+          position: relative;
+          text-align: left;
+          font-size: 1.1em;
+          font-weight: 400;
+          padding: 0.92rem 0 0.95rem 3rem; }
+          .container-philosophy__2__text ul li:nth-child(2n + 1) {
+            background-color: #0194c9; }
+          .container-philosophy__2__text ul li i {
+            padding-top: 0.3rem;
+            font-size: 1.3em;
+            position: absolute;
+            left: 1rem; }
+    @media (max-width: 830px) {
+      .container-philosophy__2 {
+        display: none; } }
+  @media (max-width: 1154px) {
+    .container-philosophy {
+      margin-top: 30rem; } }
+  @media (max-width: 830px) {
+    .container-philosophy {
+      margin-top: 75rem;
+      flex-direction: column; } }
 
 /* ESTILOS PAGINA CONTACTO */
 .contact {

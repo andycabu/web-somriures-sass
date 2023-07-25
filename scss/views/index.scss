@@ -107,6 +107,11 @@
       gap: 2rem 1rem;
     }
   }
+  &__a {
+    margin-top: 4rem;
+    text-align: center;
+    color: $color-primary;
+  }
   @include breakpoint(lg) {
     padding: 0 2rem;
   }
@@ -124,16 +129,83 @@
   margin-top: 10rem;
   &__1 {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 16rem;
-    p {
-      color: #969fa8;
+    color: #969fa8;
+
+    ul {
+      font-size: 1.3125em;
+      padding: 3rem;
+      li {
+        display: list-item;
+        list-style-type: disc;
+      }
+    }
+    img {
+      padding-right: 6rem;
+      @include breakpoint(sm) {
+        padding-right: 0;
+      }
+    }
+    @include breakpoint(lg) {
+      padding-left: 2rem;
+    }
+    @include breakpoint(sm) {
+      width: 100%;
+      padding: 0 1rem;
     }
   }
   &__2 {
+    color: #ffffff;
     width: 50%;
     background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: 70%;
+      padding: 13rem 0 10rem 0;
+      h3 {
+        color: #ffffff;
+      }
+      ul {
+        padding-left: 2rem;
+        margin-top: 1rem;
+        width: 100%;
+
+        li {
+          position: relative;
+          text-align: left;
+          font-size: 1.1em;
+          font-weight: 400;
+          padding: 0.92rem 0 0.95rem 3rem;
+          &:nth-child(2n + 1) {
+            background-color: #0194c9;
+          }
+          i {
+            padding-top: 0.3rem;
+            font-size: 1.3em;
+            position: absolute;
+            left: 1rem;
+          }
+        }
+      }
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+  @include breakpoint(lg) {
+    margin-top: 30rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 75rem;
+    flex-direction: column;
   }
 }
