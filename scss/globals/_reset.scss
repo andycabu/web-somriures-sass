@@ -41,12 +41,6 @@ main {
   background-color: #ffff;
   min-height: 100vh;
 }
-section {
-  padding: 2rem;
-  @include breakpoint(sm) {
-    padding: 1rem;
-  }
-}
 
 h1 {
   font-weight: 800;
@@ -59,8 +53,8 @@ h1 {
   margin: 3rem 0 2rem 0;
 }
 h2 {
-  font-weight: 700;
-  font-size: calc(1rem + 0.7vw);
+  font-weight: 300;
+  font-size: calc(2rem + 0.7vw);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4375rem;
