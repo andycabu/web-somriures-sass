@@ -79,6 +79,9 @@
       &__img {
         top: -1.5rem;
         position: absolute;
+        justify-content: center;
+        display: flex;
+        width: 100%;
         a {
           background-color: $color-primary;
           border: 0.0625rem solid white;
@@ -86,9 +89,6 @@
           img {
             padding: 1.5rem;
             height: 7.875rem;
-            @include breakpoint(sm) {
-              height: 3.9375rem;
-            }
           }
         }
       }
@@ -113,7 +113,7 @@
   &__a {
     margin-top: 4rem;
     text-align: center;
-    color: $color-primary;
+    color: $color-secondary;
   }
   @include breakpoint(lg) {
     padding: 0 2rem;

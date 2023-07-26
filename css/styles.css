@@ -335,7 +335,7 @@ a:hover {
             right: 1rem;
             font-size: 2em; } }
         .nav-personalized .navegation .menu .close-btn:hover {
-          color: #00b2f3;
+          color: #ff1089;
           transition: 0.3s; }
     .nav-personalized .navegation .schedule {
       display: flex; }
@@ -351,7 +351,7 @@ a:hover {
     cursor: pointer;
     display: none; }
     .nav-personalized .menu-btn:hover {
-      color: #00b2f3;
+      color: #ff1089;
       transition: 0.3s; }
     @media (max-width: 1154px) {
       .nav-personalized .menu-btn {
@@ -668,7 +668,10 @@ a:hover {
       align-items: center; }
       .container-treatments__cards__card__img {
         top: -1.5rem;
-        position: absolute; }
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        width: 100%; }
         .container-treatments__cards__card__img a {
           background-color: #00b2f3;
           border: 0.0625rem solid white;
@@ -676,9 +679,6 @@ a:hover {
           .container-treatments__cards__card__img a img {
             padding: 1.5rem;
             height: 7.875rem; }
-            @media (max-width: 830px) {
-              .container-treatments__cards__card__img a img {
-                height: 3.9375rem; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
@@ -696,7 +696,7 @@ a:hover {
   .container-treatments__a {
     margin-top: 4rem;
     text-align: center;
-    color: #00b2f3; }
+    color: #ff1089; }
   @media (max-width: 1154px) {
     .container-treatments {
       padding: 0 2rem; } }
@@ -791,7 +791,7 @@ a:hover {
     color: #666;
     background-color: #00b2f3; }
   .contact a {
-    color: #00b2f3; }
+    color: #ff1089; }
   .contact i {
     color: #00b2f3; }
 
@@ -1009,7 +1009,7 @@ input[type]:focus {
 .content1 a {
   padding-top: 0.7rem;
   display: inline-block;
-  color: #00b2f3; }
+  color: #ff1089; }
 
 .content1 p.show-less {
   overflow: hidden;
