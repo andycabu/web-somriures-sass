@@ -7,8 +7,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #969fa8;
-  background-color: #ffffff;
+  color: $text-color-primary;
+  background-color: $background-primary;
   box-shadow: $shades;
   padding: 1rem;
   transition: 0.5s;

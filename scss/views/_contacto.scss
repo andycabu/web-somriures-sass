@@ -13,7 +13,7 @@
   }
 }
 .contact-form {
-  background-color: #ffffff;
+  background-color: $background-primary;
   padding: 3rem;
 
   &__title {
@@ -21,7 +21,7 @@
     background-color: $color-primary;
     p {
       font-size: 2em;
-      color: #ffffff;
+      color: $text-color-tertiary;
       margin: 0;
       text-align: start;
       height: 100%;
@@ -32,7 +32,7 @@
 
 .field input {
   font-weight: 500;
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   padding: 0.5rem 2.1rem;
   border: 1px solid #f4f7f7;
   height: 4rem;
@@ -41,7 +41,7 @@
 
 .field textarea {
   font-weight: 500;
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   padding: 0.5rem 2.1rem;
   border: 1px solid #f4f7f7;
   height: 7rem;
@@ -52,7 +52,7 @@
 input:focus,
 input[type]:focus {
   border-color: $color-primary;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 5px #ff1089;
+  box-shadow: $shades inset, 0 0 5px $color-primary;
   outline: 0 none;
 }
 
@@ -64,14 +64,14 @@ input[type]:focus {
     width: 8rem;
     margin-top: 2rem;
     height: 3.2rem;
-    background-color: #ff1089;
+    background-color: $color-secondary;
     cursor: pointer;
-    color: #ffffff;
+    color: $text-color-tertiary;
     text-transform: uppercase;
     border-radius: 3rem;
     transition: 0.3s;
     &:hover {
-      background-color: darken(#ff1089, 30);
+      background-color: darken($color-secondary, 30);
     }
   }
 }
