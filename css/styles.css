@@ -786,6 +786,13 @@ a:hover {
       margin-top: 75rem;
       flex-direction: column; } }
 
+.container-mutuas__logos {
+  display: flex;
+  padding: 0 16rem; }
+  .container-mutuas__logos img {
+    height: 18.75rem;
+    padding: 3rem; }
+
 /* ESTILOS PAGINA CONTACTO */
 .contact {
   margin-top: 4rem; }
