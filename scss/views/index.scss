@@ -218,11 +218,19 @@
 .container-mutuas {
   &__logos {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0 16rem;
 
     img {
       height: 18.75rem;
       padding: 3rem;
+    }
+    @include breakpoint(lg) {
+      padding: 0 2rem;
+    }
+    @include breakpoint(lg) {
+      padding: 0 1rem;
     }
   }
 }

@@ -788,10 +788,18 @@ a:hover {
 
 .container-mutuas__logos {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0 16rem; }
   .container-mutuas__logos img {
     height: 18.75rem;
     padding: 3rem; }
+  @media (max-width: 1154px) {
+    .container-mutuas__logos {
+      padding: 0 2rem; } }
+  @media (max-width: 1154px) {
+    .container-mutuas__logos {
+      padding: 0 1rem; } }
 
 /* ESTILOS PAGINA CONTACTO */
 .contact {
