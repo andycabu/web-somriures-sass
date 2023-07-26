@@ -2,6 +2,7 @@
   max-height: 100vh;
   img {
     max-height: 100vh;
+    object-fit: cover;
   }
 }
 .container-index-h2 {
@@ -86,6 +87,7 @@
           background-color: $color-primary;
           border: 0.0625rem solid white;
           border-radius: 13.1875rem;
+
           img {
             padding: 1.5rem;
             height: 7.875rem;
@@ -123,7 +125,6 @@
   }
   @include breakpoint(sm) {
     padding: 0 1rem;
-    width: 67%;
   }
 }
 
@@ -280,6 +281,9 @@
           padding: 2rem;
           height: 7.875rem;
           transition: transform 0.3s, opacity 0.3s;
+        }
+        @include breakpoint(sm) {
+          width: 67%;
         }
       }
       &__text {

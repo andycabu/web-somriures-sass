@@ -145,8 +145,7 @@ iframe,
 figure {
   max-width: 100%;
   width: 100%;
-  display: block;
-  object-fit: cover; }
+  display: block; }
 
 p {
   margin: 0;
@@ -617,7 +616,8 @@ a:hover {
 .container-img {
   max-height: 100vh; }
   .container-img img {
-    max-height: 100vh; }
+    max-height: 100vh;
+    object-fit: cover; }
 
 .container-index-h2 {
   background-color: #f4f7f7; }
@@ -722,8 +722,7 @@ a:hover {
       padding: 0 2rem; } }
   @media (max-width: 830px) {
     .container-treatments {
-      padding: 0 1rem;
-      width: 67%; } }
+      padding: 0 1rem; } }
 
 .philosophy {
   background-color: #f4f7f7;
@@ -856,6 +855,9 @@ a:hover {
           padding: 2rem;
           height: 7.875rem;
           transition: transform 0.3s, opacity 0.3s; }
+        @media (max-width: 830px) {
+          .container-information__logos__logo__a {
+            width: 67%; } }
       .container-information__logos__logo__text {
         height: 100%;
         display: flex;
