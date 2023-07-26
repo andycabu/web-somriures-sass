@@ -13,3 +13,16 @@
 a:hover {
   color: $color-primary;
 }
+@keyframes zoom-fade {
+  0%,
+  100% {
+    transform: scale(1); /* Estado inicial y final: escala normal */
+    opacity: 1; /* Estado inicial y final: opacidad completa */
+  }
+  50% {
+    transform: scale(
+      1.4
+    ); /* Escala un 20% más grande en la mitad de la animación */
+    opacity: 0; /* Desvanecer en la mitad de la animación */
+  }
+}
