@@ -257,25 +257,28 @@
     margin: 5rem 0;
     gap: 2rem;
     color: #969fa8;
+
     &__logo {
       display: flex;
       position: relative;
       justify-content: center;
       height: 13rem;
-      a {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 4;
+      a:hover &__text {
+        transform: scale(0.9);
       }
+
       &__a {
         position: absolute;
         background-color: #00b2f3;
         border: 0.0625rem solid white;
         border-radius: 13.1875rem;
+        a:hover & img {
+          animation: zoom-fade 0.4s;
+        }
         img {
-          padding: 1.5rem;
+          padding: 2rem;
           height: 7.875rem;
+          transition: transform 0.3s, opacity 0.3s;
         }
       }
       &__text {
@@ -284,6 +287,7 @@
         flex-direction: column;
         justify-content: end;
         width: 12rem;
+        transition: transform 0.3s ease;
       }
     }
   }

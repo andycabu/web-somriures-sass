@@ -208,6 +208,19 @@ body {
 a:hover {
   color: #00b2f3; }
 
+@keyframes zoom-fade {
+  0%,
+  100% {
+    transform: scale(1);
+    /* Estado inicial y final: escala normal */
+    opacity: 1;
+    /* Estado inicial y final: opacidad completa */ }
+  50% {
+    transform: scale(1.4);
+    /* Escala un 20% más grande en la mitad de la animación */
+    opacity: 0;
+    /* Desvanecer en la mitad de la animación */ } }
+
 .nav-personalized {
   z-index: 999;
   max-width: 93.75rem;
@@ -828,25 +841,26 @@ a:hover {
       position: relative;
       justify-content: center;
       height: 13rem; }
-      .container-information__logos__logo a {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 4; }
+      a:hover .container-information__logos__logo__text {
+        transform: scale(0.9); }
       .container-information__logos__logo__a {
         position: absolute;
         background-color: #00b2f3;
         border: 0.0625rem solid white;
         border-radius: 13.1875rem; }
+        a:hover .container-information__logos__logo__a img {
+          animation: zoom-fade 0.4s; }
         .container-information__logos__logo__a img {
-          padding: 1.5rem;
-          height: 7.875rem; }
+          padding: 2rem;
+          height: 7.875rem;
+          transition: transform 0.3s, opacity 0.3s; }
       .container-information__logos__logo__text {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: end;
-        width: 12rem; }
+        width: 12rem;
+        transition: transform 0.3s ease; }
   @media (max-width: 1154px) {
     .container-information {
       padding: 0 2rem; } }
