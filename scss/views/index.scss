@@ -79,6 +79,9 @@
       &__img {
         top: -1.5rem;
         position: absolute;
+        justify-content: center;
+        display: flex;
+        width: 100%;
         a {
           background-color: $color-primary;
           border: 0.0625rem solid white;
@@ -86,6 +89,9 @@
           img {
             padding: 1.5rem;
             height: 7.875rem;
+          }
+          @include breakpoint(sm) {
+            width: 20%;
           }
         }
       }
@@ -110,7 +116,7 @@
   &__a {
     margin-top: 4rem;
     text-align: center;
-    color: $color-primary;
+    color: $color-secondary;
   }
   @include breakpoint(lg) {
     padding: 0 2rem;
@@ -207,5 +213,24 @@
   @include breakpoint(sm) {
     margin-top: 75rem;
     flex-direction: column;
+  }
+}
+.container-mutuas {
+  &__logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 16rem;
+
+    img {
+      height: 18.75rem;
+      padding: 3rem;
+    }
+    @include breakpoint(lg) {
+      padding: 0 2rem;
+    }
+    @include breakpoint(lg) {
+      padding: 0 1rem;
+    }
   }
 }
