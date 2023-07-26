@@ -233,4 +233,65 @@
       padding: 0 1rem;
     }
   }
+  &__a {
+    text-align: center;
+    color: $color-secondary;
+  }
+}
+.information {
+  background-color: #f4f7f7;
+}
+.container-information {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16rem;
+  text-align: center;
+  &__text-p {
+    color: #969fa8;
+  }
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875em;
+    justify-content: center;
+    margin: 5rem 0;
+    gap: 2rem;
+    color: #969fa8;
+    &__logo {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      height: 13rem;
+      a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 4;
+      }
+      &__a {
+        position: absolute;
+        background-color: #00b2f3;
+        border: 0.0625rem solid white;
+        border-radius: 13.1875rem;
+        img {
+          padding: 1.5rem;
+          height: 7.875rem;
+        }
+      }
+      &__text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 12rem;
+      }
+    }
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(sm) {
+    padding: 0 1rem;
+  }
 }

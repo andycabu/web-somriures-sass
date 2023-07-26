@@ -801,6 +801,59 @@ a:hover {
     .container-mutuas__logos {
       padding: 0 1rem; } }
 
+.container-mutuas__a {
+  text-align: center;
+  color: #ff1089; }
+
+.information {
+  background-color: #f4f7f7; }
+
+.container-information {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16rem;
+  text-align: center; }
+  .container-information__text-p {
+    color: #969fa8; }
+  .container-information__logos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875em;
+    justify-content: center;
+    margin: 5rem 0;
+    gap: 2rem;
+    color: #969fa8; }
+    .container-information__logos__logo {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      height: 13rem; }
+      .container-information__logos__logo a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 4; }
+      .container-information__logos__logo__a {
+        position: absolute;
+        background-color: #00b2f3;
+        border: 0.0625rem solid white;
+        border-radius: 13.1875rem; }
+        .container-information__logos__logo__a img {
+          padding: 1.5rem;
+          height: 7.875rem; }
+      .container-information__logos__logo__text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 12rem; }
+  @media (max-width: 1154px) {
+    .container-information {
+      padding: 0 2rem; } }
+  @media (max-width: 830px) {
+    .container-information {
+      padding: 0 1rem; } }
+
 /* ESTILOS PAGINA CONTACTO */
 .contact {
   margin-top: 4rem; }
