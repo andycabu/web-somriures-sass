@@ -91,7 +91,7 @@
             height: 7.875rem;
           }
           @include breakpoint(sm) {
-            width: 30%;
+            width: 35%;
           }
         }
       }
@@ -279,9 +279,6 @@
           padding: 2rem;
           height: 7.875rem;
           transition: transform 0.3s, opacity 0.3s;
-        }
-        @include breakpoint(sm) {
-          width: 30%;
         }
       }
       &__text {
