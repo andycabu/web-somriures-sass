@@ -485,8 +485,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  color: #e7e6e6;
-  background-color: #363839; }
+  color: #969fa8;
+  background-color: #ffffff; }
   .footer__details {
     padding-right: 0;
     display: flex;
@@ -536,8 +536,8 @@ a:hover {
       .footer__icons i:hover {
         color: #00b2f3; }
   .footer__copy {
-    color: #e7e6e6;
-    background-color: #282a2b;
+    color: #969fa8;
+    background-color: #f4f7f7;
     padding-top: 0.25rem; }
     .footer__copy p {
       text-align: center; }

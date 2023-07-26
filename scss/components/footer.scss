@@ -1,8 +1,7 @@
 .footer {
   @include display-flex(row, center, 0.5rem) {
-    color: $text-footer;
-    background-color: $background-primary;
-
+    color: #969fa8;
+    background-color: #ffffff;
     &__details {
       padding-right: 0;
       @include display-flex;
@@ -40,8 +39,8 @@
     }
   }
   &__copy {
-    color: $text-footer;
-    background-color: $background-secondary;
+    color: #969fa8;
+    background-color: #f4f7f7;
     padding-top: 0.25rem;
     & p {
       text-align: center;
