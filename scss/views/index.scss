@@ -86,6 +86,9 @@
           img {
             padding: 1.5rem;
             height: 7.875rem;
+            @include breakpoint(sm) {
+              height: 3.9375rem;
+            }
           }
         }
       }

@@ -676,6 +676,9 @@ a:hover {
           .container-treatments__cards__card__img a img {
             padding: 1.5rem;
             height: 7.875rem; }
+            @media (max-width: 830px) {
+              .container-treatments__cards__card__img a img {
+                height: 3.9375rem; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
