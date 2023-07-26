@@ -90,6 +90,9 @@
             padding: 1.5rem;
             height: 7.875rem;
           }
+          @include breakpoint(sm) {
+            width: auto;
+          }
         }
       }
       &__treatments {

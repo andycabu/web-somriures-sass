@@ -401,6 +401,9 @@ a:hover {
         background: #0194c9;
         color: #ffffff !important;
         transition: 0.3s; }
+    @media (max-width: 1154px) {
+      .sub-menu .sub-item {
+        color: #969fa8; } }
   @media (max-width: 1154px) {
     .sub-menu {
       position: relative;
@@ -679,6 +682,9 @@ a:hover {
           .container-treatments__cards__card__img a img {
             padding: 1.5rem;
             height: 7.875rem; }
+          @media (max-width: 830px) {
+            .container-treatments__cards__card__img a {
+              width: auto; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
