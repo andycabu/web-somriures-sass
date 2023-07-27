@@ -442,7 +442,6 @@ a:hover {
   background: #00b2f3;
   top: 4rem;
   padding: 0;
-  border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
   text-align: center;
   transform: translateY(1.25rem);
@@ -1168,7 +1167,8 @@ input[type]:focus {
   max-height: 18.75rem;
   max-width: 100%;
   display: block;
-  transition: transform 0.3s ease; }
+  transition: transform 0.3s ease;
+  object-fit: cover; }
   .image-container1 img:hover {
     cursor: pointer;
     transform: scale(1.1); }
