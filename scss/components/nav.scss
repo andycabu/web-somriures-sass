@@ -180,18 +180,14 @@
     @include breakpoint(lg) {
       display: block;
     }
-    @include breakpoint(sm) {
-      margin-top: 1rem;
-    }
   }
   @include breakpoint(lg) {
     padding: 1.5rem 7rem;
     &.sticky {
-      padding: 1rem 7rem;
+      padding: 1rem 3rem;
     }
   }
   @include breakpoint(sm) {
     padding: 1rem;
-    flex-direction: column;
   }
 }

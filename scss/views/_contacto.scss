@@ -25,7 +25,15 @@
       margin: 0;
       text-align: start;
       height: 100%;
-      padding: 3rem 3rem 2rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  a {
+    color: $color-primary;
+    @include breakpoint(xs) {
+      font-size: $font-small;
     }
   }
 }
@@ -46,6 +54,11 @@
   border: 1px solid #f4f7f7;
   height: 7rem;
   resize: none;
+}
+input[type="checkbox"] {
+  @include breakpoint(xs) {
+    width: 0.7rem;
+  }
 }
 
 .field textarea:focus,

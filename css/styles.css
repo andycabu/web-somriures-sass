@@ -3,8 +3,14 @@
 .p-0 {
   padding: 0; }
 
+.pl-1 {
+  padding-left: 0.5rem; }
+
 .m-0 {
   margin: 0; }
+
+.mt-2 {
+  margin-top: 2rem; }
 
 .w-100 {
   width: 100%; }
@@ -60,7 +66,7 @@
 
 @media (max-width: 830px) {
   .container-img {
-    margin-top: 5rem; } }
+    margin-top: 4rem; } }
 
 * {
   margin: 0;
@@ -369,18 +375,14 @@ a:hover {
     @media (max-width: 1154px) {
       .nav-personalized .menu-btn {
         display: block; } }
-    @media (max-width: 830px) {
-      .nav-personalized .menu-btn {
-        margin-top: 1rem; } }
   @media (max-width: 1154px) {
     .nav-personalized {
       padding: 1.5rem 7rem; }
       .nav-personalized.sticky {
-        padding: 1rem 7rem; } }
+        padding: 1rem 3rem; } }
   @media (max-width: 830px) {
     .nav-personalized {
-      padding: 1rem;
-      flex-direction: column; } }
+      padding: 1rem; } }
 
 .sub-menu {
   position: absolute;
@@ -654,7 +656,7 @@ a:hover {
         padding-right: 2rem; } }
     @media (max-width: 830px) {
       .container-index .container-contact {
-        margin-top: 6rem;
+        margin-top: 1rem;
         padding: 0;
         position: unset;
         width: 100%; } }
@@ -732,7 +734,7 @@ a:hover {
   display: flex;
   margin-top: 10rem; }
   .container-philosophy__1 {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -760,7 +762,7 @@ a:hover {
         padding: 0 1rem; } }
   .container-philosophy__2 {
     color: #ffffff;
-    width: 50%;
+    width: 40%;
     background-color: #00b2f3;
     display: flex;
     flex-direction: column;
@@ -790,6 +792,9 @@ a:hover {
             font-size: 1.3em;
             position: absolute;
             left: 1rem; }
+      @media (max-width: 1154px) {
+        .container-philosophy__2__text {
+          width: 100%; } }
     @media (max-width: 830px) {
       .container-philosophy__2 {
         display: none; } }
@@ -900,7 +905,14 @@ a:hover {
       margin: 0;
       text-align: start;
       height: 100%;
-      padding: 3rem 3rem 2rem 2rem; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .contact-form a {
+    color: #00b2f3; }
+    @media (max-width: 475px) {
+      .contact-form a {
+        font-size: 0.7em; } }
 
 .field input {
   font-weight: 500;
@@ -917,6 +929,10 @@ a:hover {
   border: 1px solid #f4f7f7;
   height: 7rem;
   resize: none; }
+
+@media (max-width: 475px) {
+  input[type="checkbox"] {
+    width: 0.7rem; } }
 
 .field textarea:focus,
 input:focus,
