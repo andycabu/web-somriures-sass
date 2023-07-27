@@ -2,6 +2,7 @@
   @include display-flex(row, center, 0.5rem) {
     color: $text-color-primary;
     background-color: $background-primary;
+    border-top: 1px solid $color-secondary;
     &__details {
       padding-right: 0;
       @include display-flex;

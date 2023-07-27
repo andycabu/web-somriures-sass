@@ -13,9 +13,13 @@
       i {
         color: $color-primary;
       }
+      @include breakpoint(lg) {
+        padding: 1rem 0;
+      }
     }
     @include breakpoint(sm) {
       max-width: 100%;
+      width: 100%;
     }
   }
 }

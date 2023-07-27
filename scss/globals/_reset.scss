@@ -93,9 +93,11 @@ figure {
 p {
   margin: 0;
   line-height: 1.5rem;
+  color: $text-color-primary;
 }
 ul {
   margin: 0;
+  color: $text-color-primary;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */

@@ -1,47 +1,39 @@
-.card {
+.container-cards {
   @include grid-template-columns(3, 2rem) {
     @include breakpoint(lg) {
       @include grid-template-columns(2, 2rem);
     }
     @include breakpoint(sm) {
       @include grid-template-columns(1, 1rem);
+      padding: 2rem 2rem;
+    }
+    @include breakpoint(sm) {
+      padding: 2rem 1rem;
     }
   }
-  .container-cards {
-    position: relative;
-    @include shades(0.625rem, 3);
-
-    & h3 {
-      position: absolute;
-      width: 100%;
+  padding: 2rem 9rem;
+  &__card {
+    background-color: $background-primary;
+    box-shadow: $shades;
+    overflow: hidden;
+    h3 {
+      padding-top: 2rem;
     }
-    & img {
-      @include display-flex;
-      object-fit: cover;
-      border-radius: 0.625rem;
-    }
-    &__overlay {
-      top: 0;
-      right: 0;
-      border-radius: 0.625rem;
-      background-color: #05050571;
-      opacity: 0;
-      transition: 0.4s ease;
-      position: absolute;
-      height: 100%;
-
-      & p {
-        color: #ffff;
-        padding: 2rem 1rem;
-        overflow: auto;
-        max-height: 100%;
+    &__img {
+      position: relative;
+      overflow: hidden;
+      img {
+        min-height: 18.75rem;
+        max-height: 18.75rem;
+        max-width: 100%;
+        display: block;
+        transition: transform 0.3s ease;
+        object-fit: cover;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+        }
       }
-      &:hover {
-        opacity: 1;
-      }
-    }
-    &:hover {
-      cursor: pointer;
     }
   }
 }

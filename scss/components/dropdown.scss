@@ -3,7 +3,6 @@
   background: $color-primary;
   top: 4rem;
   padding: 0;
-  height: 36rem;
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: $shades;
   text-align: center;
@@ -37,7 +36,7 @@
     left: -0.625rem;
     top: 0;
     transform: translateX(0.625rem);
-    background: rgba(255, 255, 255, 0.1);
+    background: $background-secondary;
     overflow: hidden;
     border-radius: 0.3125rem;
   }
