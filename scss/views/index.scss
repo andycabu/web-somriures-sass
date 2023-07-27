@@ -1,12 +1,12 @@
 .container-index-h2 {
   background-color: $background-secondary;
   .index-h2 {
-    margin-top: 20rem;
+    margin-top: 18rem;
     @include breakpoint(lg) {
       background-color: $background-primary;
       margin-top: 16rem;
     }
-    @include breakpoint(lg) {
+    @include breakpoint(sm) {
       background-color: $background-primary;
       margin-top: 0;
     }

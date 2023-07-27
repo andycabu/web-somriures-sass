@@ -658,12 +658,12 @@ a:hover {
 .container-index-h2 {
   background-color: #f4f7f7; }
   .container-index-h2 .index-h2 {
-    margin-top: 20rem; }
+    margin-top: 18rem; }
     @media (max-width: 1154px) {
       .container-index-h2 .index-h2 {
         background-color: #ffffff;
         margin-top: 16rem; } }
-    @media (max-width: 1154px) {
+    @media (max-width: 830px) {
       .container-index-h2 .index-h2 {
         background-color: #ffffff;
         margin-top: 0; } }
@@ -918,7 +918,7 @@ a:hover {
 
 /* ESTILOS PAGINA CONTACTO */
 .contact {
-  margin-top: 4rem; }
+  padding: 1rem 4rem; }
   .contact hr {
     margin: 0;
     opacity: inherit;
@@ -930,6 +930,19 @@ a:hover {
     color: #ff1089; }
   .contact i {
     color: #00b2f3; }
+  @media (max-width: 1154px) {
+    .contact {
+      padding: 1rem 2rem 2rem 2rem; } }
+  @media (max-width: 830px) {
+    .contact {
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      margin-top: 4rem; }
+      .contact .wc {
+        width: 100% !important; }
+      .contact .fp {
+        padding: 0; } }
 
 .contact-form {
   background-color: #ffffff;
@@ -1009,17 +1022,6 @@ input[type]:focus {
 
 .success-msg p {
   color: #007100c4; }
-
-@media (max-width: 830px) {
-  .contact {
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 7rem; }
-  .wc {
-    width: 100% !important; }
-  .fp {
-    padding: 0; } }
 
 .financing {
   display: flex;
