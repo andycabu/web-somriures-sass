@@ -1,3 +1,9 @@
+.img-clinic {
+  transform: translateY(-10vw);
+  @include breakpoint(lg) {
+    transform: translateY(0);
+  }
+}
 .financing {
   @include display-flex(column);
   .ul {

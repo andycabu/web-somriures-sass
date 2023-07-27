@@ -108,9 +108,9 @@
     margin-top: 4rem; } }
 
 .container-img-50 {
+  max-height: 50vh;
   overflow: hidden; }
   .container-img-50 img {
-    max-height: 50vh;
     object-fit: cover; }
   @media (max-width: 1154px) {
     .container-img-50 {
@@ -920,14 +920,8 @@ a:hover {
       padding: 0 1rem; } }
 
 /* ESTILOS PAGINA CONTACTO */
-.img-clinic {
-  transform: translateY(94px); }
-  @media (max-width: 1154px) {
-    .img-clinic {
-      transform: translateY(0); } }
-
 .img-contact {
-  transform: translateY(94px); }
+  transform: translateY(-11vw); }
   @media (max-width: 1154px) {
     .img-contact {
       transform: translateY(0); } }
@@ -1036,6 +1030,12 @@ input[type]:focus {
 
 .success-msg p {
   color: #007100c4; }
+
+.img-clinic {
+  transform: translateY(-10vw); }
+  @media (max-width: 1154px) {
+    .img-clinic {
+      transform: translateY(0); } }
 
 .financing {
   display: flex;

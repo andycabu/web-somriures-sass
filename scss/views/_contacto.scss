@@ -1,16 +1,11 @@
 /* ESTILOS PAGINA CONTACTO */
-.img-clinic {
-  transform: translateY(94px);
-  @include breakpoint(lg) {
-    transform: translateY(0);
-  }
-}
 .img-contact {
-  transform: translateY(94px);
+  transform: translateY(-11vw);
   @include breakpoint(lg) {
     transform: translateY(0);
   }
 }
+
 .contact {
   padding: 1rem 4rem;
   hr {
