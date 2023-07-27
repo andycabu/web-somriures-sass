@@ -8,7 +8,25 @@
     }
   }
 }
-.container-img {
+
+.container-img-100 {
+  img {
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  @include breakpoint(lg) {
+    margin-top: 2rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 4rem;
+  }
+}
+
+.container-img-50 {
+  & img {
+    max-height: 50vh;
+    object-fit: cover;
+  }
   @include breakpoint(lg) {
     margin-top: 2rem;
   }
