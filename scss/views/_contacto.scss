@@ -1,5 +1,16 @@
 /* ESTILOS PAGINA CONTACTO */
-
+.img-clinic {
+  transform: translateY(94px);
+  @include breakpoint(lg) {
+    transform: translateY(0);
+  }
+}
+.img-contact {
+  transform: translateY(94px);
+  @include breakpoint(lg) {
+    transform: translateY(0);
+  }
+}
 .contact {
   padding: 1rem 4rem;
   hr {
@@ -19,7 +30,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    margin-top: 4rem;
 
     .wc {
       width: 100% !important;

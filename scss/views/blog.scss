@@ -3,9 +3,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 0;
+  padding: 2rem 9rem;
   gap: 2rem;
   margin-top: 7rem;
+  @include breakpoint(lg) {
+    padding: 2rem 5rem;
+  }
+  @include breakpoint(lg) {
+    padding: 2rem 2rem;
+  }
 }
 
 .card1 {
@@ -15,7 +21,7 @@
   box-shadow: $shades;
   overflow: hidden;
   @include breakpoint(lg) {
-    width: 48%;
+    width: 47%;
   }
   @include breakpoint(sm) {
     width: 100%;

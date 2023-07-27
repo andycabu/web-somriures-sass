@@ -67,6 +67,9 @@
     margin-top: 1rem; }
     @media (max-width: 1154px) {
       .container-text h1 {
+        width: 80%; } }
+    @media (max-width: 830px) {
+      .container-text h1 {
         width: 100%; } }
     @media (max-width: 475px) {
       .container-text h1 {
@@ -104,17 +107,17 @@
   .container-img-100 {
     margin-top: 4rem; } }
 
-.container-img-50 img {
-  max-height: 50vh;
-  object-fit: cover; }
-
-@media (max-width: 1154px) {
-  .container-img-50 {
-    margin-top: 2rem; } }
-
-@media (max-width: 830px) {
-  .container-img-50 {
-    margin-top: 4rem; } }
+.container-img-50 {
+  overflow: hidden; }
+  .container-img-50 img {
+    max-height: 50vh;
+    object-fit: cover; }
+  @media (max-width: 1154px) {
+    .container-img-50 {
+      margin-top: 2rem; } }
+  @media (max-width: 830px) {
+    .container-img-50 {
+      margin-top: 4rem; } }
 
 * {
   margin: 0;
@@ -917,6 +920,18 @@ a:hover {
       padding: 0 1rem; } }
 
 /* ESTILOS PAGINA CONTACTO */
+.img-clinic {
+  transform: translateY(94px); }
+  @media (max-width: 1154px) {
+    .img-clinic {
+      transform: translateY(0); } }
+
+.img-contact {
+  transform: translateY(94px); }
+  @media (max-width: 1154px) {
+    .img-contact {
+      transform: translateY(0); } }
+
 .contact {
   padding: 1rem 4rem; }
   .contact hr {
@@ -937,8 +952,7 @@ a:hover {
     .contact {
       flex-direction: column;
       justify-content: center;
-      padding: 1rem;
-      margin-top: 4rem; }
+      padding: 1rem; }
       .contact .wc {
         width: 100% !important; }
       .contact .fp {
@@ -1122,9 +1136,15 @@ input[type]:focus {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 0;
+  padding: 2rem 9rem;
   gap: 2rem;
   margin-top: 7rem; }
+  @media (max-width: 1154px) {
+    .container1 {
+      padding: 2rem 5rem; } }
+  @media (max-width: 1154px) {
+    .container1 {
+      padding: 2rem 2rem; } }
 
 .card1 {
   width: 31%;
@@ -1134,7 +1154,7 @@ input[type]:focus {
   overflow: hidden; }
   @media (max-width: 1154px) {
     .card1 {
-      width: 48%; } }
+      width: 47%; } }
   @media (max-width: 830px) {
     .card1 {
       width: 100%; } }
