@@ -10,6 +10,12 @@
   h2 {
     color: $text-color-tertiary;
     margin: 0;
+    @include breakpoint(sm) {
+      font-size: 1.2em;
+    }
+    @include breakpoint(xs) {
+      font-size: 1em;
+    }
   }
 
   &__a {
@@ -28,5 +34,11 @@
         background-image: linear-gradient(to right, $color-secondary, darken($color-secondary, 30));
       }
     }
+  }
+  @include breakpoint(lg) {
+    margin-top: 49rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 110rem;
   }
 }
