@@ -1,0 +1,29 @@
+.menu-tractaments {
+  width: 100%;
+  margin: 3rem 0;
+
+  .menu-item-tractaments {
+    background-color: $color-primary;
+
+    padding: 2rem;
+    cursor: pointer;
+    &__p {
+      font-size: 1.3em;
+      padding-bottom: 2rem;
+      color: $text-color-tertiary;
+      border-bottom: 2px solid $background-tertiary;
+    }
+    .menu-content-tractaments {
+      display: none;
+      background-color: $background-tertiary;
+      padding: 1rem;
+      p {
+        color: $text-color-tertiary;
+      }
+    }
+
+    &.open .menu-content-tractaments {
+      display: block;
+    }
+  }
+}

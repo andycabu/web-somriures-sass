@@ -119,8 +119,8 @@ li {
 
 /* Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: $color-primary;
+  color: $text-color-tertiary;
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */

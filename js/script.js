@@ -182,6 +182,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+// funcionalidad drop tratamientos
+  const menuItems = document.querySelectorAll('.menu-item-tractaments');
+
+menuItems.forEach((menuItem) => {
+    menuItem.addEventListener('click', () => {
+        menuItem.classList.toggle('open');
+
+        menuItems.forEach((otherMenuItem) => {
+            if (otherMenuItem !== menuItem) {
+                otherMenuItem.classList.remove('open');
+            }
+        });
+    });
+});
+
+
   // Agregar el controlador de eventos de cambio de tamaño de la ventana
   window.addEventListener("resize", handleResize);
 

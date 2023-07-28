@@ -9,6 +9,9 @@
 .pl-1 {
   padding-left: 0.5rem; }
 
+.pb-5 {
+  padding-bottom: 5rem; }
+
 .m-0 {
   margin: 0; }
 
@@ -230,8 +233,8 @@ li {
 
 /* Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco); }
+  background-color: #00b2f3;
+  color: #ffffff; }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
 form,
@@ -528,8 +531,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  color: #969fa8;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #565656;
   border-top: 1px solid #ff1089; }
   .footer__details {
     padding-right: 0;
@@ -550,6 +553,7 @@ a:hover {
         .footer__details__img {
           width: 10rem; } }
     .footer__details__ul {
+      color: #ffffff;
       padding-top: 0.5rem;
       display: flex;
       flex-direction: column;
@@ -572,7 +576,7 @@ a:hover {
     padding: 0; }
     .footer__icons i {
       font-size: 1.2em;
-      color: #969fa8;
+      color: #ffffff;
       padding: 0.25rem 0.25rem 0.25rem 1rem; }
       @media (max-width: 830px) {
         .footer__icons i {
@@ -656,6 +660,27 @@ a:hover {
   @media (max-width: 830px) {
     .carousel {
       margin-top: 7rem; } }
+
+.menu-tractaments {
+  width: 100%;
+  margin: 3rem 0; }
+  .menu-tractaments .menu-item-tractaments {
+    background-color: #00b2f3;
+    padding: 2rem;
+    cursor: pointer; }
+    .menu-tractaments .menu-item-tractaments__p {
+      font-size: 1.3em;
+      padding-bottom: 2rem;
+      color: #ffffff;
+      border-bottom: 2px solid #0194c9; }
+    .menu-tractaments .menu-item-tractaments .menu-content-tractaments {
+      display: none;
+      background-color: #0194c9;
+      padding: 1rem; }
+      .menu-tractaments .menu-item-tractaments .menu-content-tractaments p {
+        color: #ffffff; }
+    .menu-tractaments .menu-item-tractaments.open .menu-content-tractaments {
+      display: block; }
 
 .container-index-h2 {
   background-color: #f4f7f7; }
@@ -813,6 +838,7 @@ a:hover {
       width: 70%;
       padding: 13rem 0 10rem 0; }
       .container-philosophy__2__text h3 {
+        font-size: 2.3rem;
         color: #ffffff; }
       .container-philosophy__2__text ul {
         color: #ffffff;
@@ -1168,3 +1194,28 @@ input[type]:focus {
   overflow: hidden;
   height: 6.125rem;
   transition: height 0.3s ease; }
+
+.img-orthodontics {
+  transform: translateY(-11vw); }
+
+.img-surgery {
+  transform: translateY(-12vw); }
+
+.container-specialty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 16rem; }
+  .container-specialty h3 {
+    padding: 3rem 0; }
+  .container-specialty__ul {
+    padding-left: 3rem; }
+    .container-specialty__ul li {
+      display: list-item;
+      list-style-type: disc; }
+  @media (max-width: 1154px) {
+    .container-specialty {
+      padding: 0 4rem; } }
+  @media (max-width: 830px) {
+    .container-specialty {
+      padding: 0 2rem; } }

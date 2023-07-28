@@ -1,0 +1,29 @@
+.img-orthodontics {
+  transform: translateY(-11vw);
+}
+.img-surgery {
+  transform: translateY(-12vw);
+}
+.container-specialty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 16rem;
+  h3 {
+    padding: 3rem 0;
+  }
+
+  &__ul {
+    padding-left: 3rem;
+    li {
+      display: list-item;
+      list-style-type: disc;
+    }
+  }
+  @include breakpoint(lg) {
+    padding: 0 4rem;
+  }
+  @include breakpoint(sm) {
+    padding: 0 2rem;
+  }
+}

@@ -1,7 +1,7 @@
 .footer {
   @include display-flex(row, center, 0.5rem) {
-    color: $text-color-primary;
-    background-color: $background-primary;
+    color: $text-color-tertiary;
+    background-color: $text-color-secondary;
     border-top: 1px solid $color-secondary;
     &__details {
       padding-right: 0;
@@ -15,6 +15,7 @@
         }
       }
       &__ul {
+        color: $text-color-tertiary;
         padding-top: 0.5rem;
         @include display-flex(column);
       }
@@ -28,7 +29,7 @@
       @include display-flex(column);
       & i {
         font-size: 1.2em;
-        color: $text-color-primary;
+        color: $text-color-tertiary;
         padding: 0.25rem 0.25rem 0.25rem 1rem;
         @include breakpoint(sm) {
           font-size: 1em;
