@@ -1007,14 +1007,17 @@ input[type]:focus {
     width: 8rem;
     margin-top: 2rem;
     height: 3.2rem;
-    background-color: #ff1089;
+    background: linear-gradient(to right, #ff1089, #ff1089);
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
     cursor: pointer;
     color: #ffffff;
     text-transform: uppercase;
     border-radius: 3rem;
     transition: 0.3s; }
     .send button:hover {
-      background-color: #76003c; }
+      background-position: -100% 0;
+      background-image: linear-gradient(to right, #ff1089, #76003c); }
 
 .button-disabled {
   opacity: 0.3 !important;
@@ -1066,66 +1069,32 @@ input[type]:focus {
         max-width: 100%;
         width: 100%; } }
 
-.financing-hr {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0; }
-  .financing-hr hr {
-    margin: 0;
-    opacity: inherit;
-    width: 26rem;
-    height: 0.0625rem;
-    border: 0;
-    color: #666;
-    background-color: #00b2f3; }
-    @media (max-width: 830px) {
-      .financing-hr hr {
-        margin: 0;
-        opacity: inherit;
-        width: 18rem;
-        height: 0.0625rem;
-        border: 0;
-        color: #666;
-        background-color: #00b2f3; } }
+.img-tractaments {
+  transform: translateY(-19vw); }
 
-.container-financing {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0; }
-  .container-financing__patients {
+.tractaments-contact {
+  margin-top: 33rem;
+  background-color: #00b2f3;
+  padding: 5rem 0;
+  text-align: center;
+  color: #ffffff; }
+  .tractaments-contact h2 {
+    color: #ffffff;
+    margin: 0; }
+  .tractaments-contact__a {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 80%; }
-    .container-financing__patients p {
-      margin-bottom: 1rem; }
-    .container-financing__patients__ul {
-      width: 100%; }
-      .container-financing__patients__ul ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0.5rem; }
-        @media (max-width: 830px) {
-          .container-financing__patients__ul ul {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 0.5rem;
-            align-items: start;
-            gap: 0.5rem; } }
-        .container-financing__patients__ul ul i {
-          color: #00b2f3; }
-    @media (max-width: 830px) {
-      .container-financing__patients {
-        width: 100%; } }
+    padding: 2rem 0; }
+    .tractaments-contact__a a {
+      padding: 1rem 4rem;
+      background: linear-gradient(to right, #ff1089, #ff1089);
+      background-size: 200% 100%;
+      transition: background-position 0.5s;
+      border-radius: 4rem; }
+      .tractaments-contact__a a:hover {
+        color: #ffffff;
+        background-position: -100% 0;
+        background-image: linear-gradient(to right, #ff1089, #76003c); }
 
 .privacidad h1 {
   margin-top: 8rem; }

@@ -99,14 +99,17 @@ input[type]:focus {
     width: 8rem;
     margin-top: 2rem;
     height: 3.2rem;
-    background-color: $color-secondary;
+    background: linear-gradient(to right, $color-secondary, $color-secondary);
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
     cursor: pointer;
     color: $text-color-tertiary;
     text-transform: uppercase;
     border-radius: 3rem;
     transition: 0.3s;
     &:hover {
-      background-color: darken($color-secondary, 30);
+      background-position: -100% 0;
+      background-image: linear-gradient(to right, $color-secondary, darken($color-secondary, 30));
     }
   }
 }
