@@ -536,6 +536,9 @@ a:hover {
       background: #f4f7f7;
       overflow: hidden;
       border-radius: 0.3125rem; } }
+  @media (max-width: 320px) {
+    .sub-menu {
+      left: 1rem; } }
 
 .container-cards {
   display: grid;
