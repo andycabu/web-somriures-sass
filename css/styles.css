@@ -122,6 +122,14 @@
     .container-img-50 {
       margin-top: 4rem; } }
 
+@media (max-width: 320px) {
+  .h-ms {
+    font-size: 1.3em; } }
+
+@media (max-width: 375px) {
+  .h2-dNone {
+    display: none; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -573,8 +581,7 @@ a:hover {
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0.5rem;
   color: #ffffff;
@@ -619,14 +626,11 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0; }
+    padding: 0;
+    gap: 0.5rem; }
     .footer__icons i {
       font-size: 1.2em;
-      color: #ffffff;
-      padding: 0.25rem 0.25rem 0.25rem 1rem; }
-      @media (max-width: 830px) {
-        .footer__icons i {
-          font-size: 1em; } }
+      color: #ffffff; }
       .footer__icons i:hover {
         color: #00b2f3; }
   .footer__copy {
@@ -788,9 +792,21 @@ a:hover {
           .container-treatments__cards__card__img a img {
             padding: 1.5rem;
             height: 7.875rem; }
-          @media (max-width: 830px) {
+          @media (max-width: 768px) {
             .container-treatments__cards__card__img a {
-              width: 32%; } }
+              width: 18%; } }
+          @media (max-width: 562px) {
+            .container-treatments__cards__card__img a {
+              width: 24%; } }
+          @media (max-width: 425px) {
+            .container-treatments__cards__card__img a {
+              width: 33%; } }
+          @media (max-width: 375px) {
+            .container-treatments__cards__card__img a {
+              width: 37%; } }
+          @media (max-width: 320px) {
+            .container-treatments__cards__card__img a {
+              width: 45%; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
@@ -837,6 +853,9 @@ a:hover {
       .container-philosophy__1 ul li {
         display: list-item;
         list-style-type: disc; }
+      @media (max-width: 425px) {
+        .container-philosophy__1 ul {
+          padding: 1rem 0 0 1rem; } }
     .container-philosophy__1 img {
       padding-right: 6rem;
       object-fit: cover; }
@@ -855,19 +874,19 @@ a:hover {
     background-color: #00b2f3;
     display: flex;
     flex-direction: column;
-    align-items: start; }
+    align-items: center;
+    justify-content: center; }
     .container-philosophy__2__text {
       display: flex;
       flex-direction: column;
-      align-items: start;
-      width: 70%;
-      padding: 13rem 0 10rem 0; }
+      padding-right: 2rem;
+      width: 100%; }
       .container-philosophy__2__text h3 {
         font-size: 2.3rem;
         color: #ffffff; }
       .container-philosophy__2__text ul {
         color: #ffffff;
-        padding-left: 2rem;
+        padding: 0 0 1rem 1rem;
         margin-top: 1rem;
         width: 100%; }
         .container-philosophy__2__text ul li {
@@ -1022,6 +1041,9 @@ a:hover {
     @media (max-width: 475px) {
       .contact-form a {
         font-size: 0.7em; } }
+  @media (max-width: 425px) {
+    .contact-form {
+      padding: 1rem; } }
 
 .field input {
   font-weight: 500;
@@ -1135,9 +1157,12 @@ input[type]:focus {
     @media (max-width: 830px) {
       .tractaments-contact h2 {
         font-size: 1.2em; } }
-    @media (max-width: 475px) {
-      .tractaments-contact h2 {
-        font-size: 1em; } }
+  .tractaments-contact__tel {
+    font-size: calc(1.5em + 0.7vw);
+    transition: transform 0.3s ease; }
+    .tractaments-contact__tel:hover {
+      transform: scale(0.9);
+      color: #ffffff; }
   .tractaments-contact__a {
     display: flex;
     justify-content: center;

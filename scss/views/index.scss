@@ -89,8 +89,20 @@
             padding: 1.5rem;
             height: 7.875rem;
           }
-          @include breakpoint(sm) {
-            width: 32%;
+          @include breakpoint(md) {
+            width: 18%;
+          }
+          @include breakpoint(m-xl) {
+            width: 24%;
+          }
+          @include breakpoint(m-l) {
+            width: 33%;
+          }
+          @include breakpoint(m-m) {
+            width: 37%;
+          }
+          @include breakpoint(m-s) {
+            width: 45%;
           }
         }
       }
@@ -148,6 +160,9 @@
         display: list-item;
         list-style-type: disc;
       }
+      @include breakpoint(m-l) {
+        padding: 1rem 0 0 1rem;
+      }
     }
     img {
       padding-right: 6rem;
@@ -169,20 +184,20 @@
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+    justify-content: center;
     &__text {
       display: flex;
       flex-direction: column;
-      align-items: start;
-      width: 70%;
-      padding: 13rem 0 10rem 0;
+      padding-right: 2rem;
+      width: 100%;
       h3 {
         font-size: 2.3rem;
         color: $text-color-tertiary;
       }
       ul {
         color: $text-color-tertiary;
-        padding-left: 2rem;
+        padding: 0 0 1rem 1rem;
         margin-top: 1rem;
         width: 100%;
 
