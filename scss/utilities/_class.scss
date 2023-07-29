@@ -1,5 +1,29 @@
 .container-text {
   @include display-flex(column);
+  padding: 0 12rem;
+  &__p1 {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  h1 {
+    text-align: left;
+    width: 80%;
+    margin-top: 1rem;
+    @include breakpoint(lg) {
+      width: 80%;
+    }
+    @include breakpoint(sm) {
+      width: 100%;
+    }
+    @include breakpoint(xs) {
+      font-size: 1.25rem;
+    }
+  }
+  &__p2 {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 
   p {
     max-width: 80%;
@@ -7,12 +31,44 @@
       max-width: 100%;
     }
   }
+  @include breakpoint(lg) {
+    padding: 0 8rem;
+  }
+  @include breakpoint(lg) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(lg) {
+    padding: 0 1rem;
+  }
 }
-.container-img {
+
+.background-secondary {
+  background-color: $background-secondary;
+}
+
+.container-img-100 {
+  img {
+    max-height: 100vh;
+    object-fit: cover;
+  }
   @include breakpoint(lg) {
     margin-top: 2rem;
   }
   @include breakpoint(sm) {
-    margin-top: 5rem;
+    margin-top: 4rem;
+  }
+}
+
+.container-img-50 {
+  max-height: 50vh;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+  }
+  @include breakpoint(lg) {
+    margin-top: 2rem;
+  }
+  @include breakpoint(sm) {
+    margin-top: 4rem;
   }
 }

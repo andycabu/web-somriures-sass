@@ -22,7 +22,7 @@
     <script src="../js/script.js"></script>
     <script src="https://kit.fontawesome.com/9baf54604b.js" crossorigin="anonymous"></script>
   </head>
-  <body id="root">
+  <body>
     <header>
       <nav class="nav-personalized">
         <div class="logo">
@@ -30,7 +30,6 @@
             <img src="../assets/images/logo.png" alt="Logo empresa" />
           </a>
         </div>
-
         <div class="navegation">
           <ul class="menu">
             <div class="logo-mobile">
@@ -41,47 +40,35 @@
             <i class="fas fa-times fa-lg close-btn"></i>
             <li class="menu-item"><a href="../index.html">Inicio</a></li>
             <li class="menu-item">
-              <a href="./clinica.html">Clínica</a>
+              <a href="./clinica.html">Somriures</a>
             </li>
-            <li class="menu-item ">
-              <a class="sub-btn-a " href="./tratamientos.html">Tratamientos</a>
-              <i class="fa fa-angle-down sub-btn " data-target="#customElement1"></i>
+            <li class="menu-item">
+              <a class="sub-btn-a" href="./tratamientos.html">Especialidades</a>
+              <i class="fa fa-angle-down sub-btn" data-target="#customElement1"></i>
               <ul class="sub-menu" id="customElement1">
                 <li class="sub-item">
-                  <a href="./tratamientos.html#revision-dental-gava">prevención</a>
+                  <a href="./tratamientos.html">Ortodoncia</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#odontopediatria-gava">odontopediatría</a>
+                  <a href="./tratamientos.html">Cirugía</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#dentista-gava">odontología general</a>
+                  <a href="./tratamientos.html">Endodoncia</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#higiene-dental-gava">periodoncia</a>
+                  <a href="./tratamientos.html">Estética Dental</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#endodoncia-gava">endodoncia</a>
+                  <a href="./tratamientos.html">implantología</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#ortodoncia-gava">ortodoncia brackets</a>
+                  <a href="./tratamientos.html">Odontopediatría</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#ortodoncia-invisible-gava">ortodoncia invisible</a>
+                  <a href="./tratamientos.html">Odontología conservadora</a>
                 </li>
                 <li class="sub-item">
-                  <a href="./tratamientos.html#implantes-dentales-gava">implantología</a>
-                </li>
-                <li class="sub-item">
-                  <a href="./tratamientos.html#protesis-dentales-fijas-gava">prótesis dentales fijas</a>
-                </li>
-                <li class="sub-item">
-                  <a href="./tratamientos.html#protesis-dentales-removibles-gava">prótesis dentales removible</a>
-                </li>
-                <li class="sub-item">
-                  <a href="./tratamientos.html#cirugia-dental-gava">cirugía y medicina oral</a>
-                </li>
-                <li class="sub-item">
-                  <a href="./tratamientos.html#carillas-gava">estética dental</a>
+                  <a href="./tratamientos.html">Prótesis</a>
                 </li>
               </ul>
             </li>
@@ -104,12 +91,25 @@
               </a>
             </div>
           </ul>
+          <div class="schedule">
+            <i class="far fa-clock"></i>
+            <p>10 a 14 y 16 a 20</p>
+          </div>
         </div>
         <i class="fas fa-bars fa-lg menu-btn"></i>
       </nav>
     </header>
     <main>
-      <section class="contact">
+      <section>
+        <div class="container-img-50 ">
+          <img
+            class="img-contact"
+            src="../assets/images/semejanza-madre-e-hija-atractiva-joven-sonriendo-junto-su-madre-mayor.webp"
+            alt="semejanza-madre-e-hija-atractiva-joven-sonriendo-junto-su-madre-mayor"
+          />
+        </div>
+      </section>
+      <section class="contact background-secondary">
         <div class="text-center">
           <h1>Contacto</h1>
           <p>
@@ -165,18 +165,18 @@
               </p>
             </div>
           </div>
-          <div class="w-50 align-items-center wc contact-form">
+          <div class="w-50 align-items-center wc mt-4 contact-form">
             <form class="" method="post">
               <div class="field row justify-content-center">
                 <div class="col-md-12 col-lg-6 fp">
-                  <input class=" w-100" required name="name" type="name" placeholder="Nombre" autocomplete="name" />
+                  <input class="w-100" required name="name" type="name" placeholder="Nombre" autocomplete="name" />
                 </div>
-                <div class=" col-md-12 col-lg-6 fp">
+                <div class="col-md-12 col-lg-6 fp">
                   <input class="w-100" required name="phone" type="tel" placeholder="Teléfono" autocomplete="tel" />
                 </div>
                 <div class="col-12 fp">
                   <input
-                    class=" w-100"
+                    class="w-100"
                     required
                     name="email"
                     type="email"

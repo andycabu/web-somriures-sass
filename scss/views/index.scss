@@ -1,16 +1,14 @@
-.container-img {
-  max-height: 100vh;
-  img {
-    max-height: 100vh;
-  }
-}
 .container-index-h2 {
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   .index-h2 {
-    margin-top: 20rem;
+    margin-top: 18rem;
     @include breakpoint(lg) {
-      background-color: #ffffff;
-      margin-top: 8rem;
+      background-color: $background-primary;
+      margin-top: 16rem;
+    }
+    @include breakpoint(sm) {
+      background-color: $background-primary;
+      margin-top: 0;
     }
   }
 }
@@ -42,7 +40,7 @@
       padding-right: 2rem;
     }
     @include breakpoint(sm) {
-      margin-top: 6rem;
+      margin-top: 1rem;
       padding: 0;
       position: unset;
       width: 100%;
@@ -56,7 +54,7 @@
   }
 }
 .container-treatments {
-  background-color: #ffff;
+  background-color: $background-primary;
   height: 25rem;
   padding: 0 16rem;
 
@@ -68,7 +66,7 @@
 
     &__card {
       position: relative;
-      background-color: #ffffff;
+      background-color: $background-primary;
       box-shadow: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
 
       height: 15rem;
@@ -86,12 +84,13 @@
           background-color: $color-primary;
           border: 0.0625rem solid white;
           border-radius: 13.1875rem;
+
           img {
             padding: 1.5rem;
             height: 7.875rem;
           }
           @include breakpoint(sm) {
-            width: 30%;
+            width: 32%;
           }
         }
       }
@@ -102,7 +101,7 @@
       &__info {
         font-size: 0.9375rem;
         margin-top: 2rem;
-        color: #969fa8;
+        color: $text-color-primary;
       }
     }
     @include breakpoint(lg) {
@@ -127,20 +126,20 @@
 }
 
 .philosophy {
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   padding-top: 10rem;
 }
 .container-philosophy {
   display: flex;
   margin-top: 10rem;
   &__1 {
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 16rem;
-    color: #969fa8;
+    color: $text-color-primary;
 
     ul {
       font-size: 1.3125em;
@@ -152,6 +151,7 @@
     }
     img {
       padding-right: 6rem;
+      object-fit: cover;
       @include breakpoint(sm) {
         padding-right: 0;
       }
@@ -165,8 +165,7 @@
     }
   }
   &__2 {
-    color: #ffffff;
-    width: 50%;
+    width: 40%;
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
@@ -178,9 +177,11 @@
       width: 70%;
       padding: 13rem 0 10rem 0;
       h3 {
-        color: #ffffff;
+        font-size: 2.3rem;
+        color: $text-color-tertiary;
       }
       ul {
+        color: $text-color-tertiary;
         padding-left: 2rem;
         margin-top: 1rem;
         width: 100%;
@@ -192,7 +193,7 @@
           font-weight: 400;
           padding: 0.92rem 0 0.95rem 3rem;
           &:nth-child(2n + 1) {
-            background-color: #0194c9;
+            background-color: $background-tertiary;
           }
           i {
             padding-top: 0.3rem;
@@ -201,6 +202,9 @@
             left: 1rem;
           }
         }
+      }
+      @include breakpoint(lg) {
+        width: 100%;
       }
     }
     @include breakpoint(sm) {
@@ -239,7 +243,7 @@
   }
 }
 .information {
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
 }
 .container-information {
   display: flex;
@@ -247,7 +251,7 @@
   padding: 0 16rem;
   text-align: center;
   &__text-p {
-    color: #969fa8;
+    color: $text-color-primary;
   }
   &__logos {
     display: flex;
@@ -256,7 +260,7 @@
     justify-content: center;
     margin: 5rem 0;
     gap: 2rem;
-    color: #969fa8;
+    color: $text-color-primary;
 
     &__logo {
       display: flex;
@@ -269,7 +273,7 @@
 
       &__a {
         position: absolute;
-        background-color: #00b2f3;
+        background-color: $color-primary;
         border: 0.0625rem solid white;
         border-radius: 13.1875rem;
         a:hover & img {
@@ -281,7 +285,7 @@
           transition: transform 0.3s, opacity 0.3s;
         }
         @include breakpoint(sm) {
-          width: 30%;
+          width: 67%;
         }
       }
       &__text {

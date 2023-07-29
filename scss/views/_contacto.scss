@@ -1,7 +1,13 @@
 /* ESTILOS PAGINA CONTACTO */
+.img-contact {
+  transform: translateY(-11vw);
+  @include breakpoint(lg) {
+    transform: translateY(0);
+  }
+}
 
 .contact {
-  margin-top: 4rem;
+  padding: 1rem 4rem;
   hr {
     @include line(null);
   }
@@ -11,9 +17,25 @@
   i {
     color: $color-primary;
   }
+  @include breakpoint(lg) {
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  @include breakpoint(sm) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    .wc {
+      width: 100% !important;
+    }
+    .fp {
+      padding: 0;
+    }
+  }
 }
 .contact-form {
-  background-color: #ffffff;
+  background-color: $background-primary;
   padding: 3rem;
 
   &__title {
@@ -21,18 +43,26 @@
     background-color: $color-primary;
     p {
       font-size: 2em;
-      color: #ffffff;
+      color: $text-color-tertiary;
       margin: 0;
       text-align: start;
       height: 100%;
-      padding: 3rem 3rem 2rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  a {
+    color: $color-primary;
+    @include breakpoint(xs) {
+      font-size: $font-small;
     }
   }
 }
 
 .field input {
   font-weight: 500;
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   padding: 0.5rem 2.1rem;
   border: 1px solid #f4f7f7;
   height: 4rem;
@@ -41,18 +71,23 @@
 
 .field textarea {
   font-weight: 500;
-  background-color: #f4f7f7;
+  background-color: $background-secondary;
   padding: 0.5rem 2.1rem;
   border: 1px solid #f4f7f7;
   height: 7rem;
   resize: none;
+}
+input[type="checkbox"] {
+  @include breakpoint(xs) {
+    width: 0.7rem;
+  }
 }
 
 .field textarea:focus,
 input:focus,
 input[type]:focus {
   border-color: $color-primary;
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 5px #ff1089;
+  box-shadow: $shades inset, 0 0 5px $color-primary;
   outline: 0 none;
 }
 
@@ -64,14 +99,17 @@ input[type]:focus {
     width: 8rem;
     margin-top: 2rem;
     height: 3.2rem;
-    background-color: #ff1089;
+    background: linear-gradient(to right, $color-secondary, $color-secondary);
+    background-size: 200% 100%;
+    transition: background-position 0.5s;
     cursor: pointer;
-    color: #ffffff;
+    color: $text-color-tertiary;
     text-transform: uppercase;
     border-radius: 3rem;
     transition: 0.3s;
     &:hover {
-      background-color: darken(#ff1089, 30);
+      background-position: -100% 0;
+      background-image: linear-gradient(to right, $color-secondary, darken($color-secondary, 30));
     }
   }
 }
@@ -88,20 +126,4 @@ input[type]:focus {
 }
 .success-msg p {
   color: #007100c4;
-}
-
-@include breakpoint(sm) {
-  .contact {
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 7rem;
-  }
-
-  .wc {
-    width: 100% !important;
-  }
-  .fp {
-    padding: 0;
-  }
 }

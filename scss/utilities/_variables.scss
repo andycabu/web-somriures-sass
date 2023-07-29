@@ -1,65 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-$font-small: 13px;
+$font-small: 0.7em;
 $font-medium: 1em;
 $color-primary: #00b2f3;
 $color-secondary: #ff1089;
-$background-primary: #363839;
-$background-secondary: #282a2b;
-$text-footer: #e7e6e6;
-$text-color: #565656;
-$shades: 3px 3px 3px 3px rgba(0, 0, 0, 0.09), 3px 3px 3px rgba(0, 0, 0, 0.09);
+$background-primary: #ffffff;
+$background-secondary: #f4f7f7;
+$background-tertiary: #0194c9;
+$background-quaternary: #353535;
+$text-color-primary: #969fa8;
+$text-color-secondary: #565656;
+$text-color-tertiary: #ffffff;
+$shades: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
 
 // breakpoints
 $grid-breakpoints: (
-  xs: 320px,
+  xs: 475px,
   sm: 830px,
   md: 768px,
-  lg: 1154px,
+  lg: 1154px
 );
 
 // class
 $class-styles: (
   p-0: (
-    padding: 0,
+    padding: 0
+  ),
+  p-1: (
+    padding: 1rem
+  ),
+  pl-1: (
+    padding-left: 0.5rem
+  ),
+  pb-5: (
+    padding-bottom: 5rem
   ),
   m-0: (
-    margin: 0,
+    margin: 0
+  ),
+  mt-2: (
+    margin-top: 2rem
   ),
   w-100: (
-    width: 100%,
+    width: 100%
   ),
   h-100: (
-    height: 100%,
+    height: 100%
   ),
   d-flex: (
-    display: flex,
+    display: flex
   ),
   flex-column: (
-    flex-direction: column,
+    flex-direction: column
   ),
   flex-row: (
-    flex-direction: row,
+    flex-direction: row
   ),
   ai-center: (
-    align-items: center,
+    align-items: center
   ),
   font-weight-600: (
-    font-weight: 600,
+    font-weight: 600
   ),
   position-relative: (
-    position: relative,
+    position: relative
   ),
   align-self-center: (
-    align-self: center,
+    align-self: center
   ),
   text-center: (
-    text-align: center,
+    text-align: center
   ),
   justify-content-center: (
-    justify-content: center,
+    justify-content: center
   ),
   justify-content-around: (
-    justify-content: space-around,
-  ),
+    justify-content: space-around
+  )
 );

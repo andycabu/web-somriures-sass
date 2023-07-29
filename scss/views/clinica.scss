@@ -1,3 +1,9 @@
+.img-clinic {
+  transform: translateY(-10vw);
+  @include breakpoint(lg) {
+    transform: translateY(0);
+  }
+}
 .financing {
   @include display-flex(column);
   .ul {
@@ -13,9 +19,13 @@
       i {
         color: $color-primary;
       }
+      @include breakpoint(lg) {
+        padding: 1rem 0;
+      }
     }
     @include breakpoint(sm) {
       max-width: 100%;
+      width: 100%;
     }
   }
 }

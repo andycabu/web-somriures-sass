@@ -7,7 +7,7 @@
   width: 0.75rem;
 }
 ::-webkit-scrollbar-thumb {
-  background: $text-color;
+  background: $text-color-secondary;
   border-radius: 0.3125rem;
   height: 15%;
 }
@@ -47,7 +47,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4375rem;
-  color: $text-color;
+  color: $text-color-secondary;
   padding: 0;
   margin: 3rem 0 2rem 0;
 }
@@ -57,7 +57,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.4375rem;
-  color: $text-color;
+  color: $text-color-secondary;
   padding: 0;
   margin: 3rem 0 2rem 0;
 }
@@ -67,7 +67,7 @@ h3 {
   font-size: calc(1em + 0.5vw);
   text-align: center;
   text-transform: uppercase;
-  color: $text-color;
+  color: $text-color-secondary;
   padding: 0;
   margin: 0;
 }
@@ -78,7 +78,56 @@ h3 {
   --tipo-principal: "Montserrat";
   --tipo-secundaria: sans-serif;
 }
+.accordion {
+  width: 100%;
+  --bs-accordion-bg: #00b2f3;
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-color: #ffffff;
+  --bs-accordion-border-color: none;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.accordion-button:not(.collapsed) {
+  color: $text-color-tertiary;
+  background-color: $color-primary;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  margin-left: 2rem;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
+.accordion-button:focus {
+  z-index: none;
+  border-color: #0194c9;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-header {
+  padding: 1rem;
+  button {
+    font-size: 1.3em;
+    padding-bottom: 2rem;
+    color: $text-color-tertiary;
+    border-bottom: 2px solid $background-tertiary;
+  }
+}
+.accordion-body {
+  p {
+    color: $text-color-tertiary;
+    background-color: $background-tertiary;
+    padding: 1rem;
+  }
+}
 /* Evitamos problemas con las imagenes */
 img,
 picture,
@@ -93,9 +142,11 @@ figure {
 p {
   margin: 0;
   line-height: 1.5rem;
+  color: $text-color-primary;
 }
 ul {
   margin: 0;
+  color: $text-color-primary;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -117,8 +168,8 @@ li {
 
 /* Configuramos el texto que seleccionamos */
 ::selection {
-  background-color: var(--negro);
-  color: var(--blanco);
+  background-color: $color-primary;
+  color: $text-color-tertiary;
 }
 
 /* Nivelamos problemas de tipografías y colocación de formularios */
