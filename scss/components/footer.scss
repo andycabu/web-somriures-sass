@@ -41,10 +41,10 @@
     }
   }
   &__copy {
-    color: $text-color-primary;
-    background-color: $background-secondary;
+    background-color: $background-quaternary;
     padding-top: 0.25rem;
     & p {
+      color: $text-color-tertiary;
       text-align: center;
     }
   }

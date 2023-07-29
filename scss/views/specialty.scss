@@ -19,6 +19,9 @@
       display: list-item;
       list-style-type: disc;
     }
+    @include breakpoint(lg) {
+      padding-left: 1rem;
+    }
   }
   @include breakpoint(lg) {
     padding: 0 4rem;
