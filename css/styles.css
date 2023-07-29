@@ -920,18 +920,20 @@ a:hover {
       flex-direction: column; } }
 
 .container-mutuas__logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
-  flex-wrap: wrap;
   padding: 0 16rem; }
   .container-mutuas__logos img {
     height: 18.75rem;
-    padding: 3rem; }
+    padding: 2rem; }
   @media (max-width: 1154px) {
     .container-mutuas__logos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       padding: 0 2rem; } }
-  @media (max-width: 1154px) {
+  @media (max-width: 830px) {
     .container-mutuas__logos {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
       padding: 0 1rem; } }
 
 .container-mutuas__a {
