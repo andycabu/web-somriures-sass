@@ -111,7 +111,7 @@
     margin-top: 4rem; } }
 
 .container-img-50 {
-  max-height: 50vh;
+  max-height: 80vh;
   overflow: hidden; }
   .container-img-50 img {
     object-fit: cover; }
@@ -121,6 +121,14 @@
   @media (max-width: 830px) {
     .container-img-50 {
       margin-top: 4rem; } }
+
+@media (max-width: 320px) {
+  .h-ms {
+    font-size: 1.3em; } }
+
+@media (max-width: 375px) {
+  .h2-dNone {
+    display: none; } }
 
 * {
   margin: 0;
@@ -514,7 +522,7 @@ a:hover {
       height: 100%; }
       .sub-menu .sub-item a:hover {
         background: #0194c9;
-        color: #565656 !important;
+        color: #ffffff !important;
         transition: 0.3s; }
     @media (max-width: 1154px) {
       .sub-menu .sub-item {
@@ -528,6 +536,9 @@ a:hover {
       background: #f4f7f7;
       overflow: hidden;
       border-radius: 0.3125rem; } }
+  @media (max-width: 320px) {
+    .sub-menu {
+      left: 1rem; } }
 
 .container-cards {
   display: grid;
@@ -573,8 +584,7 @@ a:hover {
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0.5rem;
   color: #ffffff;
@@ -619,14 +629,11 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0; }
+    padding: 0;
+    gap: 0.5rem; }
     .footer__icons i {
       font-size: 1.2em;
-      color: #ffffff;
-      padding: 0.25rem 0.25rem 0.25rem 1rem; }
-      @media (max-width: 830px) {
-        .footer__icons i {
-          font-size: 1em; } }
+      color: #ffffff; }
       .footer__icons i:hover {
         color: #00b2f3; }
   .footer__copy {
@@ -788,9 +795,21 @@ a:hover {
           .container-treatments__cards__card__img a img {
             padding: 1.5rem;
             height: 7.875rem; }
-          @media (max-width: 830px) {
+          @media (max-width: 768px) {
             .container-treatments__cards__card__img a {
-              width: 32%; } }
+              width: 18%; } }
+          @media (max-width: 562px) {
+            .container-treatments__cards__card__img a {
+              width: 24%; } }
+          @media (max-width: 425px) {
+            .container-treatments__cards__card__img a {
+              width: 33%; } }
+          @media (max-width: 375px) {
+            .container-treatments__cards__card__img a {
+              width: 37%; } }
+          @media (max-width: 320px) {
+            .container-treatments__cards__card__img a {
+              width: 45%; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
@@ -837,6 +856,9 @@ a:hover {
       .container-philosophy__1 ul li {
         display: list-item;
         list-style-type: disc; }
+      @media (max-width: 425px) {
+        .container-philosophy__1 ul {
+          padding: 1rem 0 0 1rem; } }
     .container-philosophy__1 img {
       padding-right: 6rem;
       object-fit: cover; }
@@ -855,19 +877,19 @@ a:hover {
     background-color: #00b2f3;
     display: flex;
     flex-direction: column;
-    align-items: start; }
+    align-items: center;
+    justify-content: center; }
     .container-philosophy__2__text {
       display: flex;
       flex-direction: column;
-      align-items: start;
-      width: 70%;
-      padding: 13rem 0 10rem 0; }
+      padding-right: 2rem;
+      width: 100%; }
       .container-philosophy__2__text h3 {
         font-size: 2.3rem;
         color: #ffffff; }
       .container-philosophy__2__text ul {
         color: #ffffff;
-        padding-left: 2rem;
+        padding: 0 0 1rem 1rem;
         margin-top: 1rem;
         width: 100%; }
         .container-philosophy__2__text ul li {
@@ -898,18 +920,20 @@ a:hover {
       flex-direction: column; } }
 
 .container-mutuas__logos {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
-  flex-wrap: wrap;
   padding: 0 16rem; }
   .container-mutuas__logos img {
     height: 18.75rem;
-    padding: 3rem; }
+    padding: 2rem; }
   @media (max-width: 1154px) {
     .container-mutuas__logos {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       padding: 0 2rem; } }
-  @media (max-width: 1154px) {
+  @media (max-width: 830px) {
     .container-mutuas__logos {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
       padding: 0 1rem; } }
 
 .container-mutuas__a {
@@ -1022,6 +1046,9 @@ a:hover {
     @media (max-width: 475px) {
       .contact-form a {
         font-size: 0.7em; } }
+  @media (max-width: 425px) {
+    .contact-form {
+      padding: 1rem; } }
 
 .field input {
   font-weight: 500;
@@ -1135,9 +1162,12 @@ input[type]:focus {
     @media (max-width: 830px) {
       .tractaments-contact h2 {
         font-size: 1.2em; } }
-    @media (max-width: 475px) {
-      .tractaments-contact h2 {
-        font-size: 1em; } }
+  .tractaments-contact__tel {
+    font-size: calc(1.5em + 0.7vw);
+    transition: transform 0.3s ease; }
+    .tractaments-contact__tel:hover {
+      transform: scale(0.9);
+      color: #ffffff; }
   .tractaments-contact__a {
     display: flex;
     justify-content: center;
@@ -1222,17 +1252,44 @@ input[type]:focus {
 
 .img-orthodontics {
   transform: translateY(-11vw); }
+  @media (max-width: 768px) {
+    .img-orthodontics {
+      transform: translateY(0vw); } }
 
 .img-surgery {
   transform: translateY(-12vw); }
+  @media (max-width: 768px) {
+    .img-surgery {
+      transform: translateY(0vw); } }
+
+.img-implant {
+  transform: translateY(-5vw); }
+  @media (max-width: 768px) {
+    .img-implant {
+      transform: translateY(0vw); } }
+
+.img-root-canal {
+  transform: translateY(-30vw); }
+  @media (max-width: 768px) {
+    .img-root-canal {
+      transform: translateY(-23vw); } }
+  @media (max-width: 425px) {
+    .img-root-canal {
+      transform: translateY(0vw); } }
 
 .container-specialty {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 3rem 16rem; }
+  @media (max-width: 320px) {
+    .container-specialty h2 {
+      font-size: 1.3em; } }
   .container-specialty h3 {
     padding: 3rem 0; }
+    @media (max-width: 425px) {
+      .container-specialty h3 {
+        padding: 2rem 0; } }
   .container-specialty__ul {
     padding-left: 3rem; }
     .container-specialty__ul li {
@@ -1247,3 +1304,6 @@ input[type]:focus {
   @media (max-width: 830px) {
     .container-specialty {
       padding: 0 2rem; } }
+  @media (max-width: 320px) {
+    .container-specialty {
+      padding: 0 1rem; } }

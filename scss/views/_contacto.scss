@@ -58,6 +58,9 @@
       font-size: $font-small;
     }
   }
+  @include breakpoint(m-l) {
+    padding: 1rem;
+  }
 }
 
 .field input {
@@ -109,7 +112,11 @@ input[type]:focus {
     transition: 0.3s;
     &:hover {
       background-position: -100% 0;
-      background-image: linear-gradient(to right, $color-secondary, darken($color-secondary, 30));
+      background-image: linear-gradient(
+        to right,
+        $color-secondary,
+        darken($color-secondary, 30)
+      );
     }
   }
 }

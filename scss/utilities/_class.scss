@@ -60,7 +60,7 @@
 }
 
 .container-img-50 {
-  max-height: 50vh;
+  max-height: 80vh;
   overflow: hidden;
   & img {
     object-fit: cover;
@@ -70,5 +70,16 @@
   }
   @include breakpoint(sm) {
     margin-top: 4rem;
+  }
+}
+
+.h-ms {
+  @include breakpoint(m-s) {
+    font-size: 1.3em;
+  }
+}
+.h2-dNone {
+  @include breakpoint(m-m) {
+    display: none;
   }
 }

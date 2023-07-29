@@ -1,20 +1,27 @@
 .img-tractaments {
   transform: translateY(-19vw);
 }
+
 .tractaments-contact {
   margin-top: 33rem;
   background-color: $color-primary;
   padding: 5rem 0;
   text-align: center;
   color: $text-color-tertiary;
+
   h2 {
     color: $text-color-tertiary;
     margin: 0;
     @include breakpoint(sm) {
       font-size: 1.2em;
     }
-    @include breakpoint(xs) {
-      font-size: 1em;
+  }
+  &__tel {
+    font-size: calc(1.5em + 0.7vw);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(0.9);
+      color: $text-color-tertiary;
     }
   }
 
@@ -31,7 +38,11 @@
       &:hover {
         color: $text-color-tertiary;
         background-position: -100% 0;
-        background-image: linear-gradient(to right, $color-secondary, darken($color-secondary, 30));
+        background-image: linear-gradient(
+          to right,
+          $color-secondary,
+          darken($color-secondary, 30)
+        );
       }
     }
   }

@@ -1,5 +1,5 @@
 .footer {
-  @include display-flex(row, center, 0.5rem) {
+  @include display-flex(null, space-evenly, 0.5rem) {
     color: $text-color-tertiary;
     background-color: $text-color-secondary;
     border-top: 1px solid $color-secondary;
@@ -27,13 +27,11 @@
     }
     &__icons {
       @include display-flex(column);
+      gap: 0.5rem;
       & i {
         font-size: 1.2em;
         color: $text-color-tertiary;
-        padding: 0.25rem 0.25rem 0.25rem 1rem;
-        @include breakpoint(sm) {
-          font-size: 1em;
-        }
+
         &:hover {
           color: $color-primary;
         }

@@ -1,16 +1,49 @@
 .img-orthodontics {
   transform: translateY(-11vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
 }
 .img-surgery {
   transform: translateY(-12vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
 }
+.img-implant {
+  transform: translateY(-5vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
+}
+
+.img-root-canal {
+  transform: translateY(-30vw);
+
+  @include breakpoint(md) {
+    transform: translateY(-23vw);
+  }
+
+  @include breakpoint(m-l) {
+    transform: translateY(0vw);
+  }
+}
+
 .container-specialty {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 3rem 16rem;
+  h2 {
+    @include breakpoint(m-s) {
+      font-size: 1.3em;
+    }
+  }
   h3 {
     padding: 3rem 0;
+    @include breakpoint(m-l) {
+      padding: 2rem 0;
+    }
   }
 
   &__ul {
@@ -28,5 +61,8 @@
   }
   @include breakpoint(sm) {
     padding: 0 2rem;
+  }
+  @include breakpoint(m-s) {
+    padding: 0 1rem;
   }
 }

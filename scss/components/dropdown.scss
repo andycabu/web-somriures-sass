@@ -22,7 +22,7 @@
       height: 100%;
       &:hover {
         background: $background-tertiary;
-        color: $text-color-secondary !important;
+        color: $text-color-tertiary !important;
         transition: 0.3s;
       }
     }
@@ -38,5 +38,8 @@
     background: $background-secondary;
     overflow: hidden;
     border-radius: 0.3125rem;
+  }
+  @include breakpoint(m-s) {
+    left: 1rem;
   }
 }
