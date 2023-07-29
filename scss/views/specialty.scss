@@ -1,9 +1,34 @@
 .img-orthodontics {
   transform: translateY(-11vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
 }
 .img-surgery {
   transform: translateY(-12vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
 }
+.img-implant {
+  transform: translateY(-5vw);
+  @include breakpoint(md) {
+    transform: translateY(0vw);
+  }
+}
+
+.img-root-canal {
+  transform: translateY(-30vw);
+
+  @include breakpoint(md) {
+    transform: translateY(-23vw);
+  }
+
+  @include breakpoint(m-l) {
+    transform: translateY(0vw);
+  }
+}
+
 .container-specialty {
   display: flex;
   flex-direction: column;

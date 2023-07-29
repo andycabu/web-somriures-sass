@@ -111,7 +111,7 @@
     margin-top: 4rem; } }
 
 .container-img-50 {
-  max-height: 50vh;
+  max-height: 80vh;
   overflow: hidden; }
   .container-img-50 img {
     object-fit: cover; }
@@ -522,7 +522,7 @@ a:hover {
       height: 100%; }
       .sub-menu .sub-item a:hover {
         background: #0194c9;
-        color: #565656 !important;
+        color: #ffffff !important;
         transition: 0.3s; }
     @media (max-width: 1154px) {
       .sub-menu .sub-item {
@@ -1247,9 +1247,30 @@ input[type]:focus {
 
 .img-orthodontics {
   transform: translateY(-11vw); }
+  @media (max-width: 768px) {
+    .img-orthodontics {
+      transform: translateY(0vw); } }
 
 .img-surgery {
   transform: translateY(-12vw); }
+  @media (max-width: 768px) {
+    .img-surgery {
+      transform: translateY(0vw); } }
+
+.img-implant {
+  transform: translateY(-5vw); }
+  @media (max-width: 768px) {
+    .img-implant {
+      transform: translateY(0vw); } }
+
+.img-root-canal {
+  transform: translateY(-30vw); }
+  @media (max-width: 768px) {
+    .img-root-canal {
+      transform: translateY(-23vw); } }
+  @media (max-width: 425px) {
+    .img-root-canal {
+      transform: translateY(0vw); } }
 
 .container-specialty {
   display: flex;
