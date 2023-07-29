@@ -34,8 +34,16 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 3rem 16rem;
+  h2 {
+    @include breakpoint(m-s) {
+      font-size: 1.3em;
+    }
+  }
   h3 {
     padding: 3rem 0;
+    @include breakpoint(m-l) {
+      padding: 2rem 0;
+    }
   }
 
   &__ul {
@@ -53,5 +61,8 @@
   }
   @include breakpoint(sm) {
     padding: 0 2rem;
+  }
+  @include breakpoint(m-s) {
+    padding: 0 1rem;
   }
 }

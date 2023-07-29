@@ -1277,8 +1277,14 @@ input[type]:focus {
   flex-direction: column;
   align-items: flex-start;
   padding: 3rem 16rem; }
+  @media (max-width: 320px) {
+    .container-specialty h2 {
+      font-size: 1.3em; } }
   .container-specialty h3 {
     padding: 3rem 0; }
+    @media (max-width: 425px) {
+      .container-specialty h3 {
+        padding: 2rem 0; } }
   .container-specialty__ul {
     padding-left: 3rem; }
     .container-specialty__ul li {
@@ -1293,3 +1299,6 @@ input[type]:focus {
   @media (max-width: 830px) {
     .container-specialty {
       padding: 0 2rem; } }
+  @media (max-width: 320px) {
+    .container-specialty {
+      padding: 0 1rem; } }
