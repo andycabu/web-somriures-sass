@@ -707,27 +707,6 @@ a:hover {
     .carousel {
       margin-top: 7rem; } }
 
-.menu-tractaments {
-  width: 100%;
-  margin: 3rem 0; }
-  .menu-tractaments .menu-item-tractaments {
-    background-color: #00b2f3;
-    padding: 2rem;
-    cursor: pointer; }
-    .menu-tractaments .menu-item-tractaments__p {
-      font-size: 1.3em;
-      padding-bottom: 2rem;
-      color: #ffffff;
-      border-bottom: 2px solid #0194c9; }
-    .menu-tractaments .menu-item-tractaments .menu-content-tractaments {
-      display: none;
-      background-color: #0194c9;
-      padding: 1rem; }
-      .menu-tractaments .menu-item-tractaments .menu-content-tractaments p {
-        color: #ffffff; }
-    .menu-tractaments .menu-item-tractaments.open .menu-content-tractaments {
-      display: block; }
-
 .container-index-h2 {
   background-color: #f4f7f7; }
   .container-index-h2 .index-h2 {
