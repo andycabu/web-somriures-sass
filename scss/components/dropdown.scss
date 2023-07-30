@@ -1,5 +1,5 @@
 .sub-menu {
-  @include display-flex(column);
+  @include display-flex(column, center, 0);
   position: absolute;
   background: $color-primary;
   top: 4rem;
@@ -34,7 +34,6 @@
     transform: translateX(0.625rem);
     background: $background-secondary;
     overflow: hidden;
-    border-radius: 0.3125rem;
   }
   @include breakpoint(m-s) {
     left: 1rem;
