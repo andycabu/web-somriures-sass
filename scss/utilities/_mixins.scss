@@ -9,7 +9,12 @@
   }
 }
 
-@mixin grid-template-columns($columns, $gap: 1rem, $justify-content: center, $breakpoints: null) {
+@mixin grid-template-columns(
+  $columns,
+  $gap: 1rem,
+  $justify-content: center,
+  $breakpoints: null
+) {
   display: grid;
   grid-template-columns: repeat($columns, minmax(0, 1fr));
   gap: $gap;
@@ -31,12 +36,18 @@
   }
 }
 
-@mixin display-flex($flex-direction: row, $justify-content: center, $padding: 0, $breakpoints: null) {
+@mixin display-flex(
+  $flex-direction: null,
+  $justify-content: center,
+  $padding: null,
+  $align-items: center,
+  $breakpoints: null
+) {
   display: flex;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
-  align-items: center;
   padding: $padding;
+  align-items: $align-items;
 
   @content; // Agregar esta línea para permitir estilos personalizados
 
@@ -54,7 +65,12 @@
   }
 }
 
-@mixin grid-column($justify-content, $span: auto/span, $column: null, $breakpoints: null) {
+@mixin grid-column(
+  $justify-content,
+  $span: auto/span,
+  $column: null,
+  $breakpoints: null
+) {
   display: flex;
   justify-content: $justify-content;
   align-items: center;

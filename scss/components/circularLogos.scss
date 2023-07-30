@@ -1,0 +1,55 @@
+.container-information {
+  @include display-flex(column);
+  text-align: center;
+  &__text-p {
+    color: $text-color-primary;
+  }
+  &__logos {
+    @include display-flex(null);
+    flex-wrap: wrap;
+    font-size: 0.875em;
+    margin: 5rem 0;
+    gap: 2rem;
+    color: $text-color-primary;
+
+    &__logo {
+      @include display-flex(null, center, null, normal);
+      position: relative;
+      height: 13rem;
+      a:hover &__text {
+        transform: scale(0.9);
+      }
+
+      &__a {
+        position: absolute;
+        background-color: $color-primary;
+        border: 0.0625rem solid white;
+        border-radius: 13.1875rem;
+        a:hover & img {
+          animation: zoom-fade 0.4s;
+        }
+        img {
+          padding: 2rem;
+          height: 7.875rem;
+          transition: transform 0.3s, opacity 0.3s;
+        }
+        @include breakpoint(sm) {
+          width: 67%;
+        }
+      }
+      &__text {
+        height: 100%;
+        @include display-flex(column, end);
+        width: 12rem;
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+
+  @include breakpoint(lg) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(sm) {
+    padding: 0 1rem;
+  }
+}

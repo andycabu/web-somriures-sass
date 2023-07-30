@@ -11,7 +11,7 @@
     ul {
       @include grid-template-columns(2, 1rem) {
         @include breakpoint(sm) {
-          @include grid-template-columns(1, 1rem);
+          grid-template-columns: repeat(1, minmax(0, 1fr));
         }
       }
       padding: 1rem;

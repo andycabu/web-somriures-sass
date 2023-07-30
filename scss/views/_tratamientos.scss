@@ -26,9 +26,7 @@
   }
 
   &__a {
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0;
+    @include display-flex(null, center, 2rem 0);
     a {
       padding: 1rem 4rem;
       background: linear-gradient(to right, $color-secondary, $color-secondary);
