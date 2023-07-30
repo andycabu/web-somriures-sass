@@ -1,13 +1,13 @@
 .container-cards {
   @include grid-template-columns(3, 2rem) {
     @include breakpoint(lg) {
-      @include grid-template-columns(2, 2rem);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     @include breakpoint(sm) {
-      @include grid-template-columns(1, 1rem);
+      grid-template-columns: repeat(1, minmax(0, 1fr));
       padding: 2rem 2rem;
     }
-    @include breakpoint(sm) {
+    @include breakpoint(m-l) {
       padding: 2rem 1rem;
     }
   }
@@ -44,26 +44,18 @@
   padding: 0 16rem;
 
   &__cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 4rem 2rem;
-    justify-content: center;
+    @include grid-template-columns(3, 4rem 2rem);
 
     &__card {
       position: relative;
       background-color: $background-primary;
       box-shadow: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
-
       height: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include display-flex(column);
       &__img {
         top: -1.5rem;
         position: absolute;
-        justify-content: center;
-        display: flex;
+        @include display-flex;
         width: 100%;
         a {
           background-color: $color-primary;

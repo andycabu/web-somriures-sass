@@ -1,24 +1,20 @@
 .container-information {
-  display: flex;
-  flex-direction: column;
-  padding: 0 16rem;
+  @include display-flex(column);
   text-align: center;
   &__text-p {
     color: $text-color-primary;
   }
   &__logos {
-    display: flex;
+    @include display-flex(null);
     flex-wrap: wrap;
     font-size: 0.875em;
-    justify-content: center;
     margin: 5rem 0;
     gap: 2rem;
     color: $text-color-primary;
 
     &__logo {
-      display: flex;
+      @include display-flex(null, center, null, normal);
       position: relative;
-      justify-content: center;
       height: 13rem;
       a:hover &__text {
         transform: scale(0.9);
@@ -43,9 +39,7 @@
       }
       &__text {
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
+        @include display-flex(column, end);
         width: 12rem;
         transition: transform 0.3s ease;
       }

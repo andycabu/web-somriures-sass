@@ -1,18 +1,14 @@
 .sub-menu {
+  @include display-flex(column);
   position: absolute;
   background: $color-primary;
   top: 4rem;
-  padding: 0;
   box-shadow: $shades;
-  text-align: center;
   transform: translateY(1.25rem);
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 16rem;
   .sub-item {
-    box-shadow: inset $shades;
+    box-shadow: inset 0 -30px 5px -30px rgba(255, 255, 255, 0.55);
     height: 3rem;
     width: inherit;
     color: $text-color-tertiary;
@@ -28,6 +24,7 @@
     }
     @include breakpoint(lg) {
       color: $text-color-primary;
+      box-shadow: inset 0 -30px 5px -30px rgba(150, 159, 168, 0.55);
     }
   }
   @include breakpoint(lg) {
