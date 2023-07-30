@@ -915,7 +915,8 @@ a:hover {
 
 .container-mutuas__a {
   text-align: center;
-  color: #ff1089; }
+  color: #ff1089;
+  margin-top: 3rem; }
 
 .information {
   background-color: #f4f7f7; }
