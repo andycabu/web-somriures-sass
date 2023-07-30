@@ -1212,7 +1212,7 @@ input[type]:focus {
 .container-specialty {
   display: flex;
   flex-direction: column;
-  padding: 3rem 16rem;
+  padding: 7rem 16rem;
   align-items: flex-start; }
   @media (max-width: 320px) {
     .container-specialty h2 {
@@ -1230,6 +1230,9 @@ input[type]:focus {
     @media (max-width: 1154px) {
       .container-specialty__ul {
         padding-left: 1rem; } }
+  @media (max-width: 1884px) {
+    .container-specialty {
+      padding: 0 4rem; } }
   @media (max-width: 1154px) {
     .container-specialty {
       padding: 0 4rem; } }
