@@ -610,10 +610,16 @@ a:hover {
               width: 18%; } }
           @media (max-width: 562px) {
             .container-treatments__cards__card__img a {
-              width: 24%; } }
+              width: 30%; } }
           @media (max-width: 520px) {
             .container-treatments__cards__card__img a {
               width: 28%; } }
+          @media (max-width: 475px) {
+            .container-treatments__cards__card__img a {
+              width: 32%; } }
+          @media (max-width: 434px) {
+            .container-treatments__cards__card__img a {
+              width: 32%; } }
           @media (max-width: 425px) {
             .container-treatments__cards__card__img a {
               width: 33%; } }
@@ -683,10 +689,7 @@ a:hover {
     @media (max-width: 830px) {
       .footer__details {
         padding-right: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
+        flex-direction: column; } }
   .footer__icons {
     display: flex;
     flex-direction: column;

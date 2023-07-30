@@ -22,7 +22,7 @@
 
       @include breakpoint(sm) {
         padding-right: 3rem;
-        @include display-flex(column);
+        flex-direction: column;
       }
     }
     &__icons {

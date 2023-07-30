@@ -70,10 +70,16 @@
             width: 18%;
           }
           @include breakpoint(m-xl) {
-            width: 24%;
+            width: 30%;
+          }
+          @include breakpoint(m-l3) {
+            width: 28%;
+          }
+          @include breakpoint(xs) {
+            width: 32%;
           }
           @include breakpoint(m-l2) {
-            width: 28%;
+            width: 32%;
           }
           @include breakpoint(m-l) {
             width: 33%;
