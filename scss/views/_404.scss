@@ -1,0 +1,61 @@
+.container-page-404 {
+  min-height: 89vh;
+  &__section {
+    position: relative;
+    height: 89vh;
+    overflow: hidden;
+    &__text {
+      position: absolute;
+      display: flex;
+      top: 20%;
+      padding-left: 6rem;
+      h1 {
+        font-size: 8em;
+      }
+      h2 {
+        margin: 0;
+      }
+      h2::first-letter {
+        font-size: 1.5em;
+      }
+      &__a {
+        @include display-flex(null, center, 1rem 0);
+        a {
+          padding: 1rem 4rem;
+          background: linear-gradient(to right, $color-primary, $color-primary);
+          background-size: 200% 100%;
+          transition: background-position 0.5s;
+          border-radius: 4rem;
+          &:hover {
+            color: $text-color-tertiary;
+            background-position: -100% 0;
+            background-image: linear-gradient(to right, $color-primary, darken($color-primary, 30));
+          }
+        }
+      }
+      @include breakpoint(xl) {
+        top: 9%;
+      }
+      @include breakpoint(m-xl2) {
+        flex-direction: column;
+        height: 100%;
+        position: initial;
+        justify-content: center;
+        padding: 0;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    &__img {
+      height: 100%;
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+      @include breakpoint(m-xl2) {
+        display: none;
+      }
+    }
+  }
+}
