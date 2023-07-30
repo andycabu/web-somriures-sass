@@ -801,15 +801,21 @@ a:hover {
           @media (max-width: 562px) {
             .container-treatments__cards__card__img a {
               width: 24%; } }
+          @media (max-width: 458px) {
+            .container-treatments__cards__card__img a {
+              width: 29%; } }
           @media (max-width: 425px) {
             .container-treatments__cards__card__img a {
               width: 33%; } }
           @media (max-width: 375px) {
             .container-treatments__cards__card__img a {
               width: 37%; } }
+          @media (max-width: 374px) {
+            .container-treatments__cards__card__img a {
+              width: 43%; } }
           @media (max-width: 320px) {
             .container-treatments__cards__card__img a {
-              width: 45%; } }
+              width: 44%; } }
       .container-treatments__cards__card__treatments {
         font-size: 1.125rem;
         margin-top: 5rem; }
