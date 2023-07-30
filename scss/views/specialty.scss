@@ -30,10 +30,7 @@
 }
 
 .container-specialty {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 3rem 16rem;
+  @include display-flex(column, null, 3rem 16rem, flex-start);
   h2 {
     @include breakpoint(m-s) {
       font-size: 1.3em;

@@ -109,16 +109,16 @@
   .container-img-100 {
     margin-top: 4rem; } }
 
-.container-img-50 {
+.container-img-80 {
   max-height: 80vh;
   overflow: hidden; }
-  .container-img-50 img {
+  .container-img-80 img {
     object-fit: cover; }
   @media (max-width: 1154px) {
-    .container-img-50 {
+    .container-img-80 {
       margin-top: 2rem; } }
   @media (max-width: 830px) {
-    .container-img-50 {
+    .container-img-80 {
       margin-top: 4rem; } }
 
 @media (max-width: 320px) {
@@ -155,7 +155,6 @@
       height: 3.5rem; } }
 
 body {
-  font-size: 1em;
   font-style: normal;
   line-height: 1.74;
   text-decoration: none;
@@ -163,7 +162,10 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal); }
 
 main {
   background-color: #ffff;
@@ -303,13 +305,6 @@ label {
   color: inherit;
   display: block; }
 
-/* Configuramos la tipografía para toda la web */
-body {
-  min-height: 100vh;
-  font-size: 100%;
-  font-family: var(--tipo-principal);
-  color: var(--negro); }
-
 #zoom:hover {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -343,6 +338,7 @@ a:hover {
   top: 0;
   min-width: 100vw;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: #969fa8;
@@ -363,8 +359,9 @@ a:hover {
     transition: 0.6s;
     transition-property: line-height;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: end;
+    align-items: center;
     text-align: right;
     width: 80%;
     padding-right: 1rem;
@@ -379,7 +376,6 @@ a:hover {
         right: 0;
         visibility: visible; }
       .nav-personalized .navegation .menu .logo-mobile {
-        display: flex;
         justify-content: center;
         display: none; }
         .nav-personalized .navegation .menu .logo-mobile img {
@@ -430,6 +426,7 @@ a:hover {
             margin-top: 7rem;
             display: flex;
             justify-content: center;
+            align-items: center;
             font-size: 2em;
             gap: 1rem; } }
       @media (max-width: 1154px) {
@@ -664,7 +661,7 @@ a:hover {
   align-items: center;
   color: #ffffff;
   background-color: #565656;
-  border-top: 1px solid #ff1089; }
+  border-top: 0.0625rem solid #ff1089; }
   .footer__details {
     padding-right: 0;
     display: flex;
@@ -707,6 +704,9 @@ a:hover {
     .footer__copy p {
       color: #ffffff;
       text-align: center; }
+      @media (max-width: 425px) {
+        .footer__copy p {
+          font-size: 0.6875rem; } }
 
 .container-information {
   display: flex;
@@ -1059,10 +1059,7 @@ input[type]:focus {
       padding: 1rem; }
       @media (max-width: 830px) {
         .financing .ul ul {
-          display: grid;
-          grid-template-columns: repeat(1, minmax(0, 1fr));
-          gap: 1rem;
-          justify-content: center; } }
+          grid-template-columns: repeat(1, minmax(0, 1fr)); } }
       .financing .ul ul i {
         color: #00b2f3; }
       @media (max-width: 1154px) {
@@ -1097,7 +1094,8 @@ input[type]:focus {
   .tractaments-contact__a {
     display: flex;
     justify-content: center;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    align-items: center; }
     .tractaments-contact__a a {
       padding: 1rem 4rem;
       background: linear-gradient(to right, #ff1089, #ff1089);
@@ -1120,22 +1118,29 @@ input[type]:focus {
 
 .container1 {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
   padding: 2rem 9rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 7rem; }
   @media (max-width: 1154px) {
     .container1 {
       padding: 2rem 5rem; } }
-  @media (max-width: 1154px) {
+  @media (max-width: 830px) {
     .container1 {
       padding: 2rem 2rem; } }
+  @media (max-width: 320px) {
+    .container1 {
+      padding: 1rem 1rem;
+      margin-top: 4rem; } }
 
 .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 31%;
-  height: 32.5rem;
+  height: 35.5rem;
   background-color: #ffffff;
   box-shadow: 0.067em 0.067em 4.133em rgba(12, 71, 84, 0.08);
   overflow: hidden; }
@@ -1162,7 +1167,7 @@ input[type]:focus {
     transform: scale(1.1); }
 
 .content1 {
-  padding: 1.25rem; }
+  padding: 0 1rem; }
   .content1 h3 {
     margin-bottom: 1rem; }
 
@@ -1173,7 +1178,7 @@ input[type]:focus {
 
 .content1 p.show-less {
   overflow: hidden;
-  height: 6.125rem;
+  height: 7.7rem;
   transition: height 0.3s ease; }
 
 .img-orthodontics {
@@ -1206,8 +1211,8 @@ input[type]:focus {
 .container-specialty {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 3rem 16rem; }
+  padding: 3rem 16rem;
+  align-items: flex-start; }
   @media (max-width: 320px) {
     .container-specialty h2 {
       font-size: 1.3em; } }

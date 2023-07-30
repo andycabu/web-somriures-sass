@@ -4,9 +4,7 @@
   position: fixed;
   top: 0;
   min-width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include display-flex(row, space-between);
   color: $text-color-primary;
   background-color: $background-primary;
   box-shadow: $shades;
@@ -28,9 +26,7 @@
     line-height: 5rem;
     transition: 0.6s;
     transition-property: line-height;
-    display: flex;
-    align-items: center;
-    justify-content: end;
+    @include display-flex(row, end);
     text-align: right;
     width: 80%;
     padding-right: 1rem;
@@ -47,7 +43,6 @@
         visibility: visible;
       }
       .logo-mobile {
-        display: flex;
         justify-content: center;
         display: none;
         img {
@@ -111,8 +106,7 @@
         display: none;
         @include breakpoint(lg) {
           margin-top: 7rem;
-          display: flex;
-          justify-content: center;
+          @include display-flex;
           font-size: 2em;
           gap: 1rem;
         }

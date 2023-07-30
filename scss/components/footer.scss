@@ -2,7 +2,7 @@
   @include display-flex(null, space-evenly, 0.5rem) {
     color: $text-color-tertiary;
     background-color: $text-color-secondary;
-    border-top: 1px solid $color-secondary;
+    border-top: 0.0625rem solid $color-secondary;
     &__details {
       padding-right: 0;
       @include display-flex;
@@ -44,6 +44,9 @@
     & p {
       color: $text-color-tertiary;
       text-align: center;
+      @include breakpoint(m-l) {
+        font-size: 0.6875rem;
+      }
     }
   }
 }

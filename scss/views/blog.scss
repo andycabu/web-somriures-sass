@@ -1,22 +1,24 @@
 .container1 {
-  display: flex;
+  @include display-flex(null, center, 2rem 9rem, flex-start);
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem 9rem;
   gap: 2rem;
   margin-top: 7rem;
   @include breakpoint(lg) {
     padding: 2rem 5rem;
   }
-  @include breakpoint(lg) {
+  @include breakpoint(sm) {
     padding: 2rem 2rem;
+  }
+  @include breakpoint(m-s) {
+    padding: 1rem 1rem;
+    margin-top: 4rem;
   }
 }
 
 .card1 {
+  @include display-flex(column, flex-start, null, null);
   width: 31%;
-  height: 32.5rem;
+  height: 35.5rem;
   background-color: $background-primary;
   box-shadow: $shades;
   overflow: hidden;
@@ -47,7 +49,7 @@
 }
 
 .content1 {
-  padding: 1.25rem;
+  padding: 0 1rem;
   h3 {
     margin-bottom: 1rem;
   }
@@ -61,6 +63,6 @@
 
 .content1 p.show-less {
   overflow: hidden;
-  height: 6.125rem;
+  height: 7.7rem;
   transition: height 0.3s ease;
 }
